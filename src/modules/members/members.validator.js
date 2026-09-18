@@ -28,7 +28,8 @@ const updateProfileValidator = validate([
     .notEmpty().withMessage('Full name is required.')
     .isLength({ max: 150 }).withMessage('Full name must be under 150 characters.'),
   body('bio').optional().trim(),
-  body('avatar_url').optional().trim().isURL().withMessage('Avatar URL must be a valid URL format.'),
+  body('avatar_url').optional({ nullable: true, checkFalsy: true }).trim(),
+  body('password').optional({ nullable: true, checkFalsy: true }).trim().isLength({ min: 4 }).withMessage('Password must be at least 4 characters.'),
   body('date_of_birth').optional().trim().isISO8601().withMessage('Date of birth must be a valid ISO-8601 date.')
 ]);
 

@@ -116,6 +116,15 @@ const updateProfile = async (userId, data) => {
     data: profileData
   });
 
+  if (data.password && data.password.trim()) {
+    const crypto = require('crypto');
+    const passwordHash = crypto.createHash('sha256').update(data.password.trim()).digest('hex');
+    await prisma.user.update({
+      where: { id: userId },
+      data: { passwordHash }
+    });
+  }
+
   return {
     success: true,
     message: 'Profile settings updated successfully.',
