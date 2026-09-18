@@ -679,56 +679,52 @@ const authenticateWithGoogle = async (credential, plan, req) => {
       throw new ApiError(500, 'ROLE_NOT_FOUND', 'Member role not found in database.');
     }
 
-    const createdUserId = await prisma.$transaction(async (tx) => {
-      const newUser = await tx.user.create({
-        data: {
-          email,
-          roleId: memberRole.id,
-          isApproved: true,
-          isSuspended: false,
-          profile: {
-            create: {
-              fullName,
-              avatarUrl: picture,
-              streakCount: 0,
-              wellnessScore: 0,
-              lastActiveDate: new Date()
-            }
+    const newUser = await prisma.user.create({
+      data: {
+        email,
+        roleId: memberRole.id,
+        isApproved: true,
+        isSuspended: false,
+        profile: {
+          create: {
+            fullName,
+            avatarUrl: picture,
+            streakCount: 0,
+            wellnessScore: 0,
+            lastActiveDate: new Date()
           }
         }
-      });
-
-      // Find plan or default to free-sakhi
-      let targetPlan = null;
-      if (plan) {
-        targetPlan = await tx.plan.findFirst({ where: { name: plan, deletedAt: null } });
       }
-      if (!targetPlan) {
-        targetPlan = await tx.plan.findFirst({ where: { slug: 'free-sakhi', deletedAt: null } });
-      }
-
-      if (targetPlan) {
-        const startDate = new Date();
-        const endDate = new Date();
-        endDate.setFullYear(endDate.getFullYear() + 10);
-
-        await tx.subscription.create({
-          data: {
-            userId: newUser.id,
-            planId: targetPlan.id,
-            status: 'ACTIVE',
-            startDate,
-            endDate,
-            autoRenew: false
-          }
-        });
-      }
-
-      return newUser.id;
     });
 
+    // Find plan or default to free-sakhi
+    let targetPlan = null;
+    if (plan) {
+      targetPlan = await prisma.plan.findFirst({ where: { name: plan, deletedAt: null } });
+    }
+    if (!targetPlan) {
+      targetPlan = await prisma.plan.findFirst({ where: { slug: 'free-sakhi', deletedAt: null } });
+    }
+
+    if (targetPlan) {
+      const startsAt = new Date();
+      const endsAt = new Date();
+      endsAt.setFullYear(endsAt.getFullYear() + 10);
+
+      await prisma.memberSubscription.create({
+        data: {
+          userId: newUser.id,
+          planId: targetPlan.id,
+          status: 'ACTIVE',
+          startsAt,
+          endsAt,
+          autoRenew: false
+        }
+      });
+    }
+
     user = await prisma.user.findUnique({
-      where: { id: createdUserId },
+      where: { id: newUser.id },
       include: {
         role: true,
         profile: true,
