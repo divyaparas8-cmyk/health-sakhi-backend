@@ -97,39 +97,44 @@ const sendOtp = async (email, role, password, req) => {
     }
   });
 
-  if (existingUser) {
-    // Check if user's role matches the selected role
-    if (existingUser.roleId !== dbRole.id) {
-      throw new ApiError(401, 'INVALID_CREDENTIALS', 'Invalid credentials for the selected role.');
-    }
-
-    if (existingUser.isSuspended) {
-      throw new ApiError(403, 'USER_SUSPENDED', 'Your account has been suspended by an administrator.');
-    }
-    if (!existingUser.isApproved) {
-      throw new ApiError(403, 'PENDING_APPROVAL', 'Your registration request is pending admin approval. You will receive an alert once approved.');
-    }
-
-    // Verify password if user has passwordHash
-    if (existingUser.passwordHash) {
-      if (!password) {
-        throw new ApiError(400, 'PASSWORD_REQUIRED', 'Password is required to login to this account.');
-      }
-      const hashed = hashString(password);
-      if (existingUser.passwordHash !== hashed) {
-        throw new ApiError(401, 'INVALID_CREDENTIALS', 'Invalid email or password.');
-      }
-    }
-
-    // Direct login: generate tokens directly for existing approved users
-    const tokens = await generateSessionTokens(existingUser, req);
-    return {
-      success: true,
-      directLogin: true,
-      message: 'Login successful.',
-      ...tokens
-    };
+  if (!password || !password.trim()) {
+    throw new ApiError(400, 'PASSWORD_REQUIRED', 'Password is required to login to this account.');
   }
+
+  if (!existingUser) {
+    throw new ApiError(404, 'USER_NOT_FOUND', 'No account found with this email. Please register first.');
+  }
+
+  // Check if user's role matches the selected role
+  if (existingUser.roleId !== dbRole.id) {
+    throw new ApiError(401, 'INVALID_CREDENTIALS', 'Invalid credentials for the selected role.');
+  }
+
+  if (existingUser.isSuspended) {
+    throw new ApiError(403, 'USER_SUSPENDED', 'Your account has been suspended by an administrator.');
+  }
+  if (!existingUser.isApproved) {
+    throw new ApiError(403, 'PENDING_APPROVAL', 'Your registration request is pending admin approval. You will receive an alert once approved.');
+  }
+
+  // Check if user has passwordHash (if registered with Google only)
+  if (!existingUser.passwordHash) {
+    throw new ApiError(400, 'GOOGLE_ACCOUNT_LOGIN', 'This account was registered using Google. Please click "Sign in with Google" to log in.');
+  }
+
+  const hashed = hashString(password);
+  if (existingUser.passwordHash !== hashed) {
+    throw new ApiError(401, 'INVALID_CREDENTIALS', 'Incorrect password. Please enter the correct password.');
+  }
+
+  // Direct login: generate tokens directly for existing approved users
+  const tokens = await generateSessionTokens(existingUser, req);
+  return {
+    success: true,
+    directLogin: true,
+    message: 'Login successful.',
+    ...tokens
+  };
 
   // Generate 6-digit numeric OTP
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
