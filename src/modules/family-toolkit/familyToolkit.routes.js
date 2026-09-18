@@ -24,6 +24,7 @@ router.post('/admin/family-toolkits/upload', authenticate, upload.single('file')
 // Category routes
 router.get('/family-toolkits/categories', familyToolkitController.getCategories);
 router.post('/admin/family-toolkits/categories', authenticate, familyToolkitController.createCategory);
+router.put('/admin/family-toolkits/categories/:id', authenticate, familyToolkitController.updateCategory);
 router.delete('/admin/family-toolkits/categories/:id', authenticate, familyToolkitController.deleteCategory);
 
 module.exports = router;

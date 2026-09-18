@@ -183,6 +183,39 @@ const createCategory = async (name) => {
   return category;
 };
 
+const updateCategory = async (id, newName) => {
+  const trimmed = newName.trim();
+  const existing = await prisma.familyToolkitCategory.findUnique({
+    where: { id }
+  });
+  if (!existing) {
+    throw new Error('Category not found');
+  }
+
+  const oldName = existing.name;
+  const newSlug = generateSlug(trimmed);
+
+  const updated = await prisma.familyToolkitCategory.update({
+    where: { id },
+    data: {
+      name: trimmed,
+      slug: newSlug
+    }
+  });
+
+  // Cascade category rename to existing toolkits
+  try {
+    await prisma.familyToolkit.updateMany({
+      where: { category: oldName },
+      data: { category: trimmed }
+    });
+  } catch (err) {
+    console.warn('Could not cascade category rename to toolkits:', err.message);
+  }
+
+  return updated;
+};
+
 const deleteCategory = async (id) => {
   const deleted = await prisma.familyToolkitCategory.delete({
     where: { id }
@@ -198,5 +231,7 @@ module.exports = {
   deleteToolkit,
   getCategories,
   createCategory,
+  updateCategory,
   deleteCategory
 };
+

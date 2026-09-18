@@ -159,6 +159,24 @@ const createCategory = async (req, res, next) => {
   }
 };
 
+const updateCategory = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const { name } = req.body;
+    if (!name || !name.trim()) {
+      return res.status(400).json({ success: false, error: 'Category name is required.' });
+    }
+    const category = await familyToolkitService.updateCategory(id, name);
+    res.status(200).json({
+      success: true,
+      message: 'Category updated successfully',
+      category
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
 const deleteCategory = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -181,5 +199,7 @@ module.exports = {
   uploadFile,
   getCategories,
   createCategory,
+  updateCategory,
   deleteCategory
 };
+
