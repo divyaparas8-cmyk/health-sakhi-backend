@@ -26,6 +26,7 @@ const faqRoutes = require('./modules/faq/faq.routes');
 const blogRoutes = require('./modules/blog/blog.routes');
 const certificatesRoutes = require('./modules/certificates/certificate.routes');
 const diaryRoutes = require('./modules/diary/diary.routes');
+const familyToolkitRoutes = require('./modules/family-toolkit/familyToolkit.routes');
 const { autoTranslateMiddleware } = require('./middlewares/translation');
 const path = require('path');
 
@@ -96,6 +97,7 @@ app.use('/api', chatbotRoutes);
 app.use('/api/v1', chatbotRoutes);
 app.use('/api/v1/certificates', certificatesRoutes);
 app.use('/api/v1/diary', diaryRoutes);
+app.use('/api/v1', familyToolkitRoutes);
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // 7. Global catch-all error handling middleware

@@ -1360,5 +1360,24 @@ model ChatMemory {
   @@map("chat_memories")
 }
 
+model FamilyToolkit {
+  id          String   @id @default(uuid())
+  slug        String   @unique @db.VarChar(150)
+  title       String   @db.VarChar(255)
+  subtitle    String?  @db.VarChar(255)
+  category    String   @db.VarChar(100)
+  badge       String?  @db.VarChar(100)
+  accentColor String?  @map("accent_color") @db.VarChar(100)
+  icon        String?  @db.VarChar(50)
+  readTime    String?  @map("read_time") @db.VarChar(100)
+  summary     String?  @db.Text
+  coverUrl    String?  @map("cover_url") @db.VarChar(512)
+  documentUrl String?  @map("document_url") @db.VarChar(512)
+  fileName    String?  @map("file_name") @db.VarChar(255)
+  status      String   @default("Published") @db.VarChar(20)
+  sections    String?  @db.LongText
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
 
-
+  @@map("family_toolkits")
+}
