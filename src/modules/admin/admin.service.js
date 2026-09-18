@@ -289,9 +289,8 @@ const updateUser = async (id, data, adminId) => {
     throw new ApiError(404, 'USER_NOT_FOUND', 'User not found.');
   }
 
-  const oldValues = { phone: user.phone, isApproved: user.isApproved, isSuspended: user.isSuspended };
+  const oldValues = { isApproved: user.isApproved, isSuspended: user.isSuspended };
   const updateData = {};
-  if (data.phone !== undefined) updateData.phone = data.phone;
 
   // Map status string to boolean fields
   if (data.status !== undefined) {
@@ -1021,7 +1020,6 @@ const createUser = async (data, adminId) => {
   const createdUser = await prisma.$transaction(async (tx) => {
     const userPayload = {
       email: data.email,
-      phone: data.phone || null,
       roleId: role.id,
       isApproved: true,
       isSuspended: false,
@@ -1170,7 +1168,6 @@ const createAdvisor = async (data, adminId) => {
   const result = await prisma.$transaction(async (tx) => {
     const userPayload = {
       email: data.email,
-      phone: data.phone || null,
       roleId: role.id,
       isApproved: true,
       isSuspended: false,

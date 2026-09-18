@@ -97,7 +97,6 @@ model User {
   id          String    @id @default(uuid())
   email       String    @db.VarChar(255)
   passwordHash String?  @db.VarChar(255) @map("password_hash")
-  phone       String?   @db.VarChar(20)
   roleId      String    @map("role_id")
   isApproved  Boolean   @default(false) @map("is_approved")
   isSuspended Boolean   @default(false) @map("is_suspended")
@@ -1216,7 +1215,6 @@ model SignupRequest {
   name      String
   email     String
   role      String
-  phone     String?
   plan      String?
   specialty String?
   status    String   @default("pending") // pending/approved
@@ -1229,7 +1227,7 @@ model Faq {
   id              String   @id @default(uuid())
   question        String   @db.Text
   answer          String   @db.Text
-  category        String   @db.VarChar(100) // 'Account', 'Health Tracking', 'Consultation', 'Payments', 'Privacy', 'Technical Support'
+  category        String   @db.VarChar(100) // 'Body Hygiene, Natural Discharge, and Skin', 'Periods, Puberty, and Hormone Changes', etc. (11 Approved Categories)
   displayOrder    Int      @default(0) @map("display_order")
   status          String   @default("Published") @db.VarChar(20) // 'Published', 'Draft'
   isPopular       Boolean  @default(false) @map("is_popular")

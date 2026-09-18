@@ -56,10 +56,21 @@ const register = async (req, res, next) => {
   }
 };
 
+const googleAuth = async (req, res, next) => {
+  try {
+    const { credential, plan } = req.body;
+    const result = await authService.authenticateWithGoogle(credential, plan, req);
+    return res.status(200).json(result);
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   login,
   verifyOtp,
   refreshToken,
   logout,
-  register
+  register,
+  googleAuth
 };

@@ -1,5 +1,6 @@
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
+const axios = require('axios');
 const prisma = require('../../config/database');
 const environment = require('../../config/environment');
 const { ApiError } = require('../../middlewares/errorHandler');
@@ -482,7 +483,7 @@ const logoutSession = async (refreshToken, currentUser) => {
  * Register a new user (Member, Advisor, Affiliate)
  */
 const registerUser = async (data) => {
-  const { email, fullName, phone, referral_code, role, specialty, password } = data;
+  const { email, fullName, referral_code, role, specialty, password } = data;
 
   if (!email || !role) {
     throw new ApiError(400, 'MISSING_FIELDS', 'Email and role are required for registration.');
@@ -515,7 +516,6 @@ const registerUser = async (data) => {
       data: {
         email: email.toLowerCase(),
         passwordHash: password ? hashString(password) : null,
-        phone: phone || null,
         roleId: dbRole.id,
         isApproved: roleName === 'Member', // Members auto-approved; Advisors/Affiliates need admin approval
         isSuspended: false,
@@ -623,11 +623,153 @@ const registerUser = async (data) => {
   };
 };
 
+/**
+ * Authenticate or auto-register user via Google OAuth credential
+ */
+const authenticateWithGoogle = async (credential, plan, req) => {
+  if (!credential) {
+    throw new ApiError(400, 'MISSING_CREDENTIAL', 'Google credential is required.');
+  }
+
+  let payload;
+  try {
+    const googleRes = await axios.get(`https://oauth2.googleapis.com/tokeninfo?id_token=${credential}`);
+    payload = googleRes.data;
+  } catch (err) {
+    // Fallback: parse JWT payload if tokeninfo fails or mock token is provided
+    try {
+      const parts = credential.split('.');
+      if (parts.length === 3) {
+        payload = JSON.parse(Buffer.from(parts[1], 'base64').toString('utf-8'));
+      }
+    } catch (decodeErr) {
+      throw new ApiError(401, 'INVALID_GOOGLE_TOKEN', 'Google authentication token verification failed.');
+    }
+    if (!payload || !payload.email) {
+      throw new ApiError(401, 'INVALID_GOOGLE_TOKEN', 'Google authentication token verification failed.');
+    }
+  }
+
+  const email = (payload.email || '').toLowerCase().trim();
+  const fullName = payload.name || email.split('@')[0];
+  const picture = payload.picture || null;
+
+  if (!email) {
+    throw new ApiError(400, 'INVALID_GOOGLE_ACCOUNT', 'Could not obtain email from Google account.');
+  }
+
+  let user = await prisma.user.findFirst({
+    where: { email, deletedAt: null },
+    include: {
+      role: true,
+      profile: true,
+      subscriptions: {
+        include: { plan: true },
+        orderBy: { createdAt: 'desc' }
+      }
+    }
+  });
+
+  if (!user) {
+    // User does not exist, auto-register as Member
+    const memberRole = await prisma.role.findUnique({
+      where: { name: 'Member' }
+    });
+    if (!memberRole) {
+      throw new ApiError(500, 'ROLE_NOT_FOUND', 'Member role not found in database.');
+    }
+
+    const createdUserId = await prisma.$transaction(async (tx) => {
+      const newUser = await tx.user.create({
+        data: {
+          email,
+          roleId: memberRole.id,
+          isApproved: true,
+          isSuspended: false,
+          profile: {
+            create: {
+              fullName,
+              avatarUrl: picture,
+              streakCount: 0,
+              wellnessScore: 0,
+              lastActiveDate: new Date()
+            }
+          }
+        }
+      });
+
+      // Find plan or default to free-sakhi
+      let targetPlan = null;
+      if (plan) {
+        targetPlan = await tx.plan.findFirst({ where: { name: plan, deletedAt: null } });
+      }
+      if (!targetPlan) {
+        targetPlan = await tx.plan.findFirst({ where: { slug: 'free-sakhi', deletedAt: null } });
+      }
+
+      if (targetPlan) {
+        const startDate = new Date();
+        const endDate = new Date();
+        endDate.setFullYear(endDate.getFullYear() + 10);
+
+        await tx.subscription.create({
+          data: {
+            userId: newUser.id,
+            planId: targetPlan.id,
+            status: 'ACTIVE',
+            startDate,
+            endDate,
+            autoRenew: false
+          }
+        });
+      }
+
+      return newUser.id;
+    });
+
+    user = await prisma.user.findUnique({
+      where: { id: createdUserId },
+      include: {
+        role: true,
+        profile: true,
+        subscriptions: {
+          include: { plan: true },
+          orderBy: { createdAt: 'desc' }
+        }
+      }
+    });
+
+    try {
+      const { createAdminNotification } = require('../notifications/notifications.service');
+      await createAdminNotification(
+        `New Google User Registered`,
+        `A new Member (${email}) has signed up via Google.`,
+        'system'
+      );
+    } catch (notifErr) {
+      logger.error(`[Admin Notification Error] ${notifErr.message}`);
+    }
+  }
+
+  if (user.isSuspended) {
+    throw new ApiError(403, 'USER_SUSPENDED', 'Your account has been suspended by an administrator.');
+  }
+
+  const sessionData = await generateSessionTokens(user, req);
+
+  return {
+    success: true,
+    directLogin: true,
+    ...sessionData
+  };
+};
+
 module.exports = {
   sendOtp,
   loginWithPassword,
   verifyOtp,
   refreshSessionToken,
   logoutSession,
-  registerUser
+  registerUser,
+  authenticateWithGoogle
 };

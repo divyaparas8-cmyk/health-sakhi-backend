@@ -31,7 +31,6 @@ const getUsersValidator = validate([
 
 const updateUserValidator = validate([
   ...uuidParamValidator('id'),
-  body('phone').optional().trim().isLength({ min: 5, max: 20 }).withMessage('Phone number must be between 5 and 20 characters.'),
   body('fullName').optional().trim().notEmpty().withMessage('Full name cannot be empty.'),
   body('bio').optional().trim(),
   body('planSlug').optional().trim().notEmpty().withMessage('Plan slug cannot be empty.'),
@@ -99,7 +98,6 @@ const updatePlanValidator = validate([
 
 const createUserValidator = validate([
   body('email').trim().isEmail().withMessage('Valid email address is required.'),
-  body('phone').optional().trim().isLength({ min: 5, max: 20 }).withMessage('Phone number must be between 5 and 20 characters.'),
   body('fullName').trim().notEmpty().withMessage('Full name is required.'),
   body('planSlug').optional().trim().notEmpty().withMessage('Plan slug cannot be empty.')
 ]);
@@ -107,7 +105,6 @@ const createUserValidator = validate([
 const createAdvisorValidator = validate([
   body('name').trim().notEmpty().withMessage('Advisor name is required.'),
   body('email').trim().isEmail().withMessage('Valid email address is required.'),
-  body('phone').trim().isLength({ min: 5, max: 20 }).withMessage('Phone number must be between 5 and 20 characters.'),
   body('specialty').trim().notEmpty().withMessage('Specialty is required.'),
   body('status').trim().isIn(['pending', 'approved', 'Review', 'Pending', 'Approved', 'review']).withMessage('Status must be pending, approved, or Review.')
 ]);

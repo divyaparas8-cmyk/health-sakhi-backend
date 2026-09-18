@@ -42,7 +42,7 @@ const handleChatMessage = async (req, res, next) => {
  */
 const handleUserSignup = async (req, res, next) => {
   try {
-    const { name, email, password, role, specialty, phone, plan } = req.body;
+    const { name, email, password, role, specialty, plan } = req.body;
 
     if (!email || !password || !role) {
       throw new ApiError(400, 'MISSING_FIELDS', 'Email, password, and role are required.');
@@ -54,7 +54,6 @@ const handleUserSignup = async (req, res, next) => {
         name: name || email.split('@')[0],
         email: email.toLowerCase().trim(),
         role: role.toLowerCase().trim(),
-        phone: phone || null,
         plan: plan || null,
         specialty: specialty || null,
         status: 'pending'
@@ -71,7 +70,6 @@ const handleUserSignup = async (req, res, next) => {
     const result = await authService.registerUser({
       email: email.toLowerCase().trim(),
       fullName: name || email.split('@')[0],
-      phone: phone || null,
       role: mappedRole,
       specialty: specialty || 'Hormonal Health',
       password

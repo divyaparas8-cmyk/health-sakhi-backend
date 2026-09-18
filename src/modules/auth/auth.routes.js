@@ -17,6 +17,9 @@ router.post('/refresh-token', refreshTokenValidator, authController.refreshToken
 // Public signup - register with optional referral code
 router.post('/register', authController.register);
 
+// Google Sign-In authentication & auto-registration
+router.post('/google', authController.googleAuth);
+
 // Authenticated session logout
 router.post('/logout', authenticate, authController.logout);
 
