@@ -80,10 +80,60 @@ const deleteToolkit = async (req, res, next) => {
   }
 };
 
+const imagekit = require('../../config/imagekit');
+
+const uploadFile = async (req, res, next) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ success: false, error: 'No file uploaded.' });
+    }
+
+    const safeOriginal = req.file.originalname.replace(/[^a-zA-Z0-9._-]/g, '_');
+    const fileName = `${Date.now()}-${safeOriginal}`;
+    const folder = req.body.folder || '/healthsakhi_toolkit';
+
+    let uploadRes;
+    try {
+      uploadRes = await imagekit.upload({
+        file: req.file.buffer,
+        fileName,
+        folder
+      });
+    } catch (ikError) {
+      console.warn('ImageKit upload failed, fallback to local storage:', ikError.message);
+      uploadRes = {
+        url: `http://localhost:5000/uploads/${fileName}`,
+        name: fileName
+      };
+    }
+
+    // If in mock mode or fallback happened, write buffer to local uploads folder
+    if (uploadRes.url && uploadRes.url.includes('localhost:5000/uploads')) {
+      const fs = require('fs');
+      const path = require('path');
+      const uploadsDir = path.join(__dirname, '../../../uploads');
+      if (!fs.existsSync(uploadsDir)) {
+        fs.mkdirSync(uploadsDir, { recursive: true });
+      }
+      fs.writeFileSync(path.join(uploadsDir, fileName), req.file.buffer);
+    }
+
+    return res.status(200).json({
+      success: true,
+      url: uploadRes.url,
+      name: uploadRes.name || fileName,
+      originalName: req.file.originalname
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
 module.exports = {
   getToolkits,
   getToolkitById,
   createToolkit,
   updateToolkit,
-  deleteToolkit
+  deleteToolkit,
+  uploadFile
 };
