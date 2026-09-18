@@ -1381,3 +1381,13 @@ model FamilyToolkit {
 
   @@map("family_toolkits")
 }
+
+model FamilyToolkitCategory {
+  id        String   @id @default(uuid())
+  name      String   @unique @db.VarChar(100)
+  slug      String   @unique @db.VarChar(120)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("family_toolkit_categories")
+}

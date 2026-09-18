@@ -129,11 +129,57 @@ const uploadFile = async (req, res, next) => {
   }
 };
 
+const getCategories = async (req, res, next) => {
+  try {
+    const categories = await familyToolkitService.getCategories();
+    res.status(200).json({
+      success: true,
+      count: categories.length,
+      categories
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const createCategory = async (req, res, next) => {
+  try {
+    const { name } = req.body;
+    if (!name || !name.trim()) {
+      return res.status(400).json({ success: false, error: 'Category name is required.' });
+    }
+    const category = await familyToolkitService.createCategory(name);
+    res.status(201).json({
+      success: true,
+      message: 'Category created successfully',
+      category
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const deleteCategory = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    await familyToolkitService.deleteCategory(id);
+    res.status(200).json({
+      success: true,
+      message: 'Category deleted successfully'
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
 module.exports = {
   getToolkits,
   getToolkitById,
   createToolkit,
   updateToolkit,
   deleteToolkit,
-  uploadFile
+  uploadFile,
+  getCategories,
+  createCategory,
+  deleteCategory
 };

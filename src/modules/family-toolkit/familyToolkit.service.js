@@ -154,11 +154,37 @@ const updateToolkit = async (id, data) => {
   return updated;
 };
 
-/**
- * Delete a toolkit
- */
 const deleteToolkit = async (id) => {
   const deleted = await prisma.familyToolkit.delete({
+    where: { id }
+  });
+  return deleted;
+};
+
+/**
+ * Category Methods
+ */
+const getCategories = async () => {
+  const categories = await prisma.familyToolkitCategory.findMany({
+    orderBy: { createdAt: 'asc' }
+  });
+  return categories;
+};
+
+const createCategory = async (name) => {
+  const trimmed = name.trim();
+  const slug = generateSlug(trimmed);
+  const category = await prisma.familyToolkitCategory.create({
+    data: {
+      name: trimmed,
+      slug
+    }
+  });
+  return category;
+};
+
+const deleteCategory = async (id) => {
+  const deleted = await prisma.familyToolkitCategory.delete({
     where: { id }
   });
   return deleted;
@@ -169,5 +195,8 @@ module.exports = {
   getToolkitByIdOrSlug,
   createToolkit,
   updateToolkit,
-  deleteToolkit
+  deleteToolkit,
+  getCategories,
+  createCategory,
+  deleteCategory
 };
