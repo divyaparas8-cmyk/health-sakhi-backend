@@ -82,6 +82,8 @@ const deleteToolkit = async (req, res, next) => {
 
 const imagekit = require('../../config/imagekit');
 
+const { parseDocxBuffer } = require('./toolkitDocxParser');
+
 const uploadFile = async (req, res, next) => {
   try {
     if (!req.file) {
@@ -118,11 +120,28 @@ const uploadFile = async (req, res, next) => {
       fs.writeFileSync(path.join(uploadsDir, fileName), req.file.buffer);
     }
 
+    // Automatically parse DOCX file content into structured sections & HTML
+    let parsedDoc = null;
+    const isDocx =
+      req.file.originalname.toLowerCase().endsWith('.docx') ||
+      (req.file.mimetype && req.file.mimetype.includes('wordprocessingml'));
+
+    if (isDocx) {
+      try {
+        parsedDoc = await parseDocxBuffer(req.file.buffer);
+      } catch (parseErr) {
+        console.warn('Docx parsing warning:', parseErr.message);
+      }
+    }
+
     return res.status(200).json({
       success: true,
       url: uploadRes.url,
       name: uploadRes.name || fileName,
-      originalName: req.file.originalname
+      originalName: req.file.originalname,
+      sections: parsedDoc?.sections || null,
+      htmlContent: parsedDoc?.htmlContent || null,
+      rawText: parsedDoc?.rawText || null
     });
   } catch (err) {
     next(err);

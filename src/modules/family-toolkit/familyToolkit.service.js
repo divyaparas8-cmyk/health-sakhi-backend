@@ -11,18 +11,44 @@ const generateSlug = (text) => {
     .replace(/[\s\W-]+/g, '-');
 };
 
-/**
- * Get all toolkits with filtering
- */
-const getToolkits = async ({ category, search, status }) => {
-  const where = {};
+const { parseRemoteDocx } = require('./toolkitDocxParser');
 
-  if (status && status !== 'All') {
-    where.status = status;
+function unpackSectionsData(sectionsField) {
+  let parsedSections = [];
+  let htmlContent = null;
+  let rawText = null;
+
+  if (sectionsField) {
+    try {
+      const parsed = typeof sectionsField === 'string' ? JSON.parse(sectionsField) : sectionsField;
+      if (Array.isArray(parsed)) {
+        parsedSections = parsed;
+      } else if (parsed && typeof parsed === 'object') {
+        parsedSections = Array.isArray(parsed.sections) ? parsed.sections : [];
+        htmlContent = parsed.htmlContent || null;
+        rawText = parsed.rawText || null;
+      }
+    } catch (err) {
+      parsedSections = [];
+    }
   }
+
+  return { parsedSections, htmlContent, rawText };
+}
+
+/**
+ * Get all toolkits with optional filters
+ */
+const getToolkits = async (filters = {}) => {
+  const { category, search, status } = filters;
+  const where = {};
 
   if (category && category !== 'All') {
     where.category = category;
+  }
+
+  if (status && status !== 'All') {
+    where.status = status;
   }
 
   if (search && search.trim()) {
@@ -40,25 +66,50 @@ const getToolkits = async ({ category, search, status }) => {
     orderBy: { createdAt: 'desc' }
   });
 
-  return toolkits.map((t) => {
-    let parsedSections = [];
-    if (t.sections) {
+  const results = [];
+  for (const t of toolkits) {
+    let { parsedSections, htmlContent, rawText } = unpackSectionsData(t.sections);
+
+    // Auto-parse on the fly if sections are missing but a docx document is present
+    if ((!parsedSections || parsedSections.length === 0) && t.documentUrl && t.documentUrl.includes('.docx')) {
       try {
-        parsedSections = typeof t.sections === 'string' ? JSON.parse(t.sections) : t.sections;
+        const remoteDoc = await parseRemoteDocx(t.documentUrl);
+        if (remoteDoc && remoteDoc.sections && remoteDoc.sections.length > 0) {
+          parsedSections = remoteDoc.sections;
+          htmlContent = remoteDoc.htmlContent || null;
+          rawText = remoteDoc.rawText || null;
+
+          // Asynchronously update DB cache for fast future retrieval
+          prisma.familyToolkit.update({
+            where: { id: t.id },
+            data: {
+              sections: JSON.stringify({
+                sections: parsedSections,
+                htmlContent,
+                rawText
+              })
+            }
+          }).catch((e) => console.warn('Cache write warning:', e.message));
+        }
       } catch (err) {
-        parsedSections = [];
+        console.warn('Auto docx parse warning for', t.id, err.message);
       }
     }
-    return {
+
+    results.push({
       ...t,
       accentColor: t.accentColor,
       readTime: t.readTime,
       coverUrl: t.coverUrl,
       documentUrl: t.documentUrl,
       fileName: t.fileName,
-      sections: parsedSections
-    };
-  });
+      sections: parsedSections,
+      htmlContent,
+      rawText
+    });
+  }
+
+  return results;
 };
 
 /**
@@ -76,18 +127,37 @@ const getToolkitByIdOrSlug = async (idOrSlug) => {
 
   if (!toolkit) return null;
 
-  let parsedSections = [];
-  if (toolkit.sections) {
+  let { parsedSections, htmlContent, rawText } = unpackSectionsData(toolkit.sections);
+
+  if ((!parsedSections || parsedSections.length === 0) && toolkit.documentUrl && toolkit.documentUrl.includes('.docx')) {
     try {
-      parsedSections = typeof toolkit.sections === 'string' ? JSON.parse(toolkit.sections) : toolkit.sections;
+      const remoteDoc = await parseRemoteDocx(toolkit.documentUrl);
+      if (remoteDoc && remoteDoc.sections && remoteDoc.sections.length > 0) {
+        parsedSections = remoteDoc.sections;
+        htmlContent = remoteDoc.htmlContent || null;
+        rawText = remoteDoc.rawText || null;
+
+        prisma.familyToolkit.update({
+          where: { id: toolkit.id },
+          data: {
+            sections: JSON.stringify({
+              sections: parsedSections,
+              htmlContent,
+              rawText
+            })
+          }
+        }).catch((e) => console.warn('Cache write warning:', e.message));
+      }
     } catch (err) {
-      parsedSections = [];
+      console.warn('Auto docx parse warning for', toolkit.id, err.message);
     }
   }
 
   return {
     ...toolkit,
-    sections: parsedSections
+    sections: parsedSections,
+    htmlContent,
+    rawText
   };
 };
 
@@ -97,8 +167,30 @@ const getToolkitByIdOrSlug = async (idOrSlug) => {
 const createToolkit = async (data) => {
   const slug = data.slug ? generateSlug(data.slug) : `${generateSlug(data.title)}-${Date.now().toString().slice(-4)}`;
 
-  const sectionsJson = data.sections
-    ? (typeof data.sections === 'string' ? data.sections : JSON.stringify(data.sections))
+  let sectionsToSave = data.sections;
+  let htmlContent = data.htmlContent || null;
+  let rawText = data.rawText || null;
+
+  // Auto-parse documentUrl if sections not supplied directly
+  if ((!sectionsToSave || (Array.isArray(sectionsToSave) && sectionsToSave.length === 0)) && data.documentUrl && data.documentUrl.includes('.docx')) {
+    try {
+      const parsed = await parseRemoteDocx(data.documentUrl);
+      if (parsed) {
+        sectionsToSave = parsed.sections;
+        htmlContent = parsed.htmlContent;
+        rawText = parsed.rawText;
+      }
+    } catch (e) {
+      console.warn('Error parsing docx during createToolkit:', e.message);
+    }
+  }
+
+  const sectionsJson = sectionsToSave
+    ? JSON.stringify({
+        sections: Array.isArray(sectionsToSave) ? sectionsToSave : (sectionsToSave.sections || []),
+        htmlContent,
+        rawText
+      })
     : null;
 
   const created = await prisma.familyToolkit.create({
@@ -142,8 +234,33 @@ const updateToolkit = async (id, data) => {
   if (data.documentUrl !== undefined) updateData.documentUrl = data.documentUrl;
   if (data.fileName !== undefined) updateData.fileName = data.fileName;
   if (data.status !== undefined) updateData.status = data.status;
-  if (data.sections !== undefined) {
-    updateData.sections = typeof data.sections === 'string' ? data.sections : JSON.stringify(data.sections);
+
+  if (data.sections !== undefined || data.documentUrl !== undefined) {
+    let sectionsToSave = data.sections;
+    let htmlContent = data.htmlContent || null;
+    let rawText = data.rawText || null;
+
+    const docUrl = data.documentUrl;
+    if ((!sectionsToSave || (Array.isArray(sectionsToSave) && sectionsToSave.length === 0)) && docUrl && docUrl.includes('.docx')) {
+      try {
+        const parsed = await parseRemoteDocx(docUrl);
+        if (parsed) {
+          sectionsToSave = parsed.sections;
+          htmlContent = parsed.htmlContent;
+          rawText = parsed.rawText;
+        }
+      } catch (e) {
+        console.warn('Error parsing docx during updateToolkit:', e.message);
+      }
+    }
+
+    if (sectionsToSave) {
+      updateData.sections = JSON.stringify({
+        sections: Array.isArray(sectionsToSave) ? sectionsToSave : (sectionsToSave.sections || []),
+        htmlContent,
+        rawText
+      });
+    }
   }
 
   const updated = await prisma.familyToolkit.update({
