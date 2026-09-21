@@ -613,22 +613,34 @@ const getPlans = async () => {
 
   return {
     success: true,
-    plans: plans.map(p => ({
-      id: p.id,
-      name: p.name,
-      slug: p.slug,
-      price: Number(p.price),
-      originalPrice: p.originalPrice ? Number(p.originalPrice) : null,
-      interval: p.interval,
-      status: p.status,
-      maxAiChatsPerDay: p.maxAiChatsPerDay,
-      advisorCredits: p.advisorCredits,
-      features: p.features.map(f => ({
-        id: f.id,
-        name: f.featureName,
-        value: f.featureValue
-      }))
-    }))
+    plans: plans.map(p => {
+      const isBlurredFeat = (p.features || []).find(f => {
+        const fn = (f.featureName || '').toLowerCase().trim();
+        return fn === 'isblurred' || fn === 'is_blurred' || fn === 'blur';
+      });
+      const isBlurred = isBlurredFeat
+        ? (String(isBlurredFeat.featureValue).toLowerCase().trim() === 'true' || String(isBlurredFeat.featureValue).trim() === '1')
+        : false;
+
+      return {
+        id: p.id,
+        name: p.name,
+        slug: p.slug,
+        price: Number(p.price),
+        originalPrice: p.originalPrice ? Number(p.originalPrice) : null,
+        interval: p.interval,
+        status: isBlurred ? 'BLURRED' : p.status,
+        dbStatus: p.status,
+        isBlurred,
+        maxAiChatsPerDay: p.maxAiChatsPerDay,
+        advisorCredits: p.advisorCredits,
+        features: p.features.map(f => ({
+          id: f.id,
+          name: f.featureName,
+          value: f.featureValue
+        }))
+      };
+    })
   };
 };
 
