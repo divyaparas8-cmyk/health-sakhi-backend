@@ -1,0 +1,889 @@
+{
+  "id": "9afad1ae-931e-416f-bafe-e1e955962d13",
+  "slug": "husbands-heart-health",
+  "title": "Husbands Heart Health",
+  "subtitle": "Written for the King of Family Hearts",
+  "category": "Heart Care",
+  "author": "Dr. Pratap Madhukar",
+  "desc": "Essential cardiovascular prevention, blood pressure mastery, stress reduction, diet, and healthy lifestyle habits for men and family pillars.",
+  "description": "Essential cardiovascular prevention, blood pressure mastery, stress reduction, diet, and healthy lifestyle habits for men and family pillars.",
+  "image": "/Images/cover -husbands heart health.png",
+  "coverUrl": "/Images/cover -husbands heart health.png",
+  "chapters": [
+    {
+      "id": "ch-husbands-heart-health-1",
+      "order": 1,
+      "title": "2. Anatomy of the Heart",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>2. Anatomy of the Heart</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-2",
+      "order": 2,
+      "title": "3. Chambers and Blood Flow",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>3. Chambers and Blood Flow</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-3",
+      "order": 3,
+      "title": "4. Electrical System of the Heart",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>4. Electrical System of the Heart</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-4",
+      "order": 4,
+      "title": "5. Coronary Circulation",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>5. Coronary Circulation</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-5",
+      "order": 5,
+      "title": "6. Blockage Formation Mechanism",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>6. Blockage Formation Mechanism</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-6",
+      "order": 6,
+      "title": "7. Plaque Development",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>7. Plaque Development</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-7",
+      "order": 7,
+      "title": "8. Clot Formation Process",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>8. Clot Formation Process</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-8",
+      "order": 8,
+      "title": "9. Blood Thickness and Flow",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>9. Blood Thickness and Flow</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-9",
+      "order": 9,
+      "title": "10. Stress and Heart Triggers",
+      "page": 1,
+      "targetPage": 0,
+      "snippet": "11. Early Warning Signals...",
+      "content": "<p><p>10. Stress and Heart Triggers</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-10",
+      "order": 10,
+      "title": "11. Early Warning Signals",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p>11. Early Warning Signals</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-11",
+      "order": 11,
+      "title": "12. Types of Heart Attacks",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>12. Types of Heart Attacks</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-12",
+      "order": 12,
+      "title": "13. Exertional Chest Pain",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>13. Exertional Chest Pain</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-13",
+      "order": 13,
+      "title": "14. Duration-Based Warning Signs",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>14. Duration-Based Warning Signs</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-14",
+      "order": 14,
+      "title": "15. Silent and Atypical Symptoms",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>15. Silent and Atypical Symptoms</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-15",
+      "order": 15,
+      "title": "16. Acidic vs Cardiac Pain",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>16. Acidic vs Cardiac Pain</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-16",
+      "order": 16,
+      "title": "17. Emergency Red Flags",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>17. Emergency Red Flags</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-17",
+      "order": 17,
+      "title": "18. Stroke Recognition (FAST)",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>18. Stroke Recognition (FAST)</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-18",
+      "order": 18,
+      "title": "19. Cardiac Arrest Identification",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>19. Cardiac Arrest Identification</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-19",
+      "order": 19,
+      "title": "20. Collapse and Fainting Evaluation",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>20. Collapse and Fainting Evaluation</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-20",
+      "order": 20,
+      "title": "21. Heart Attack Symptom Patterns",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>21. Heart Attack Symptom Patterns</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-21",
+      "order": 21,
+      "title": "22. Risk Assessment (KING Tool)",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>22. Risk Assessment (KING Tool)</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-22",
+      "order": 22,
+      "title": "23. When to Call Ambulance",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>23. When to Call Ambulance</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-23",
+      "order": 23,
+      "title": "24. First Response at Home",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>24. First Response at Home</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-24",
+      "order": 24,
+      "title": "25. Ambulance Systems and Equipment",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>25. Ambulance Systems and Equipment</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-25",
+      "order": 25,
+      "title": "26. Emergency Department Management",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>26. Emergency Department Management</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-26",
+      "order": 26,
+      "title": "27. Evaluation of Heart Attack",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>27. Evaluation of Heart Attack</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-27",
+      "order": 27,
+      "title": "28. What Doctors Look for in ECG",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>28. What Doctors Look for in ECG</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-28",
+      "order": 28,
+      "title": "29. Troponin and Why Its Value Matters",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>29. Troponin and Why Its Value Matters</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-29",
+      "order": 29,
+      "title": "30. Risk Stratification in Simple Words",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>30. Risk Stratification in Simple Words</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-30",
+      "order": 30,
+      "title": "31. HEART Score and What Doctors Do Next",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>31. HEART Score and What Doctors Do Next</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-31",
+      "order": 31,
+      "title": "32. Simple ESC-Based Early Plan",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>32. Simple ESC-Based Early Plan</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-32",
+      "order": 32,
+      "title": "33. ICU and Cath Lab Care",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>33. ICU and Cath Lab Care</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-33",
+      "order": 33,
+      "title": "34. Emergency Medicines",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>34. Emergency Medicines</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-34",
+      "order": 34,
+      "title": "35. Diagnostic Investigations",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>35. Diagnostic Investigations</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-35",
+      "order": 35,
+      "title": "36. ECG and Blood Tests",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>36. ECG and Blood Tests</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-36",
+      "order": 36,
+      "title": "37. Differential Diagnosis",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>37. Differential Diagnosis</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-37",
+      "order": 37,
+      "title": "38. Hospital Decision Systems",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>38. Hospital Decision Systems</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-38",
+      "order": 38,
+      "title": "39. Unstable Angina",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>39. Unstable Angina</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-39",
+      "order": 39,
+      "title": "40. Stable Angina",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>40. Stable Angina</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-40",
+      "order": 40,
+      "title": "41. Microvascular Angina",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>41. Microvascular Angina</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-41",
+      "order": 41,
+      "title": "42. Vasospastic (Prinzmetal’s) Angina",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>42. Vasospastic (Prinzmetal’s) Angina</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-42",
+      "order": 42,
+      "title": "43. Emergency Drug Therapy",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>43. Emergency Drug Therapy</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-43",
+      "order": 43,
+      "title": "44. Primary PCI and Stenting",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>44. Primary PCI and Stenting</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-44",
+      "order": 44,
+      "title": "45. Thrombolysis Therapy",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>45. Thrombolysis Therapy</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-45",
+      "order": 45,
+      "title": "46. Beta Blockers and ACE Inhibitors",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>46. Beta Blockers and ACE Inhibitors</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-46",
+      "order": 46,
+      "title": "47. Statins and Antiplatelets",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>47. Statins and Antiplatelets</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-47",
+      "order": 47,
+      "title": "48. Long-Term Medication Strategy",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>48. Long-Term Medication Strategy</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-48",
+      "order": 48,
+      "title": "49. Lifestyle Modification",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>49. Lifestyle Modification</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-49",
+      "order": 49,
+      "title": "50. Medication Discipline",
+      "page": 2,
+      "targetPage": 1,
+      "snippet": "51. Cardiac Rehabilitation...",
+      "content": "<p><p>50. Medication Discipline</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-50",
+      "order": 50,
+      "title": "51. Cardiac Rehabilitation",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p>51. Cardiac Rehabilitation</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-51",
+      "order": 51,
+      "title": "52. Return to Work and Society",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>52. Return to Work and Society</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-52",
+      "order": 52,
+      "title": "53. Follow-Up and Monitoring",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>53. Follow-Up and Monitoring</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-53",
+      "order": 53,
+      "title": "54. Heart Diary System",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>54. Heart Diary System</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-54",
+      "order": 54,
+      "title": "55. Personal Identity Records",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>55. Personal Identity Records</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-55",
+      "order": 55,
+      "title": "56. Emergency Contact Network",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>56. Emergency Contact Network</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-56",
+      "order": 56,
+      "title": "57. Insurance and Financial Records",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>57. Insurance and Financial Records</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-57",
+      "order": 57,
+      "title": "58. Medicine and Allergy Records",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>58. Medicine and Allergy Records</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-58",
+      "order": 58,
+      "title": "59. Past Medical History",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>59. Past Medical History</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-59",
+      "order": 59,
+      "title": "60. Lifestyle Risk Profile",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>60. Lifestyle Risk Profile</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-60",
+      "order": 60,
+      "title": "61. Excess Clotting Disorders",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>61. Excess Clotting Disorders</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-61",
+      "order": 61,
+      "title": "62. Bleeding Risk Conditions",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>62. Bleeding Risk Conditions</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-62",
+      "order": 62,
+      "title": "63. Thrombolysis Contraindications",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>63. Thrombolysis Contraindications</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-63",
+      "order": 63,
+      "title": "64. Combined Risk Factors",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>64. Combined Risk Factors</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-64",
+      "order": 64,
+      "title": "65. Blood Pressure Records",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>65. Blood Pressure Records</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-65",
+      "order": 65,
+      "title": "66. Diabetes Monitoring",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>66. Diabetes Monitoring</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-66",
+      "order": 66,
+      "title": "67. Cholesterol Tracking",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>67. Cholesterol Tracking</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-67",
+      "order": 67,
+      "title": "68. ECG Archiving",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>68. ECG Archiving</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-68",
+      "order": 68,
+      "title": "69. Imaging Documentation",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>69. Imaging Documentation</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-69",
+      "order": 69,
+      "title": "70. Job Pattern Analysis",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>70. Job Pattern Analysis</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-70",
+      "order": 70,
+      "title": "71. Work Stress Evaluation",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>71. Work Stress Evaluation</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-71",
+      "order": 71,
+      "title": "72. Financial Stability",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>72. Financial Stability</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-72",
+      "order": 72,
+      "title": "73. Emotional Fulfillment",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>73. Emotional Fulfillment</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-73",
+      "order": 73,
+      "title": "74. Dietary Pattern Review",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>74. Dietary Pattern Review</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-74",
+      "order": 74,
+      "title": "75. Processed Food Risks",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>75. Processed Food Risks</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-75",
+      "order": 75,
+      "title": "76. Hidden Sugar Intake",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>76. Hidden Sugar Intake</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-76",
+      "order": 76,
+      "title": "77. Type-A Personality",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>77. Type-A Personality</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-77",
+      "order": 77,
+      "title": "78. Behavioural Risk Habits",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>78. Behavioural Risk Habits</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-78",
+      "order": 78,
+      "title": "79. Chest Pain Action Plan",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>79. Chest Pain Action Plan</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-79",
+      "order": 79,
+      "title": "80. Risk Reduction Strategy",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>80. Risk Reduction Strategy</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-80",
+      "order": 80,
+      "title": "81. Stress Management",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>81. Stress Management</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-81",
+      "order": 81,
+      "title": "82. Exercise Planning",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>82. Exercise Planning</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-82",
+      "order": 82,
+      "title": "83. Addiction Control",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>83. Addiction Control</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-83",
+      "order": 83,
+      "title": "84. Family Counseling",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>84. Family Counseling</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-84",
+      "order": 84,
+      "title": "85. Spiritual Balance",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>85. Spiritual Balance</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-85",
+      "order": 85,
+      "title": "86. Annual Heart Review",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>86. Annual Heart Review</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-86",
+      "order": 86,
+      "title": "87. Family Risk Mapping",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>87. Family Risk Mapping</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-87",
+      "order": 87,
+      "title": "88. Early Warning Monitoring",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>88. Early Warning Monitoring</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-88",
+      "order": 88,
+      "title": "89. Digital Health Tools",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>89. Digital Health Tools</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-89",
+      "order": 89,
+      "title": "90. Home Health Culture",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>90. Home Health Culture</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-90",
+      "order": 90,
+      "title": "91. Summary and Learning",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>91. Summary and Learning</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-91",
+      "order": 91,
+      "title": "92. Commitment to Action",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>92. Commitment to Action</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-92",
+      "order": 92,
+      "title": "93. Family Health Pledge",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Disclaimer This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected h...",
+      "content": "<p><p>93. Family Health Pledge</p>"
+    },
+    {
+      "id": "ch-husbands-heart-health-93",
+      "order": 93,
+      "title": "94. Final Message",
+      "page": 3,
+      "targetPage": 2,
+      "snippet": "Reference: American Heart Association and European Society of Cardiology...",
+      "content": "<p><p>94. Final Message</p>\n<p><p><strong>Reference: </strong><em>American Heart Association and European Society of Cardiology</em></p>\n<p><p><h1>Preface</h1><p>This book is written for wives, children, and families who want to protect the man who protects them every day. Many husbands ignore tiredness, chest pain, stress, high blood pressure, diabetes, and poor sleep because they keep putting family first. This loving sacrifice is noble, but it can also become dangerous when warning signs are missed. The aim of this book is simple: to explain heart health in clear language so families can notice danger early, support treatment wisely, and build healthier routines at home. It is not written to create fear. It is written to create awareness, readiness, and care. When a family understands the heart, it becomes stronger. When a husband's heart is protected, the whole home rests more peacefully.</p>"
+    }
+  ],
+  "pages": [
+    "<p>Husbands Heart Health</p>\n<p>HealthSakhi Family Wellness Book Series</p>\n<p>Written for the King of Family Hearts</p>\n<p><h2>Father - The King of Family Hearts</h2><p><em>He is the roof in wind and rain,</em></p>\n<p><em>The quiet strength through joy and pain.</em></p>\n<p><em>He hides his worries, stands so tall,</em></p>\n<p><em>And gives his heart, his best, his all.</em></p>\n<p><em>His tired hands build every day,</em></p>\n<p><em>His silent love lights up the way.</em></p>\n<p><em>For every smile the children wear,</em></p>\n<p><em>Some part of him is beating there.</em></p>\n<p><em>So wife and children, hold him near,</em></p>\n<p><em>Protect his heart with love, not fear.</em></p>\n<p><em>With gentle words, with rest, with care,</em></p>\n<p><em>Let him feel safe, let him feel rare.</em></p>\n<p><em>For when his heart is kept in light,</em></p>\n<p><em>The whole home sleeps in peace at night.</em></p>\n<p><em>A father's heart, a husband's grace -</em></p>\n<p><em>Is God's own warmth inside the place.</em></p>\n<p><h1>Index</h1><p>1. Heart Function and Importance</p>\n<p>2. Anatomy of the Heart</p>\n<p>3. Chambers and Blood Flow</p>\n<p>4. Electrical System of the Heart</p>\n<p>5. Coronary Circulation</p>\n<p>6. Blockage Formation Mechanism</p>\n<p>7. Plaque Development</p>\n<p>8. Clot Formation Process</p>\n<p>9. Blood Thickness and Flow</p>\n<p>10. Stress and Heart Triggers</p>",
+    "<p>11. Early Warning Signals</p>\n<p>12. Types of Heart Attacks</p>\n<p>13. Exertional Chest Pain</p>\n<p>14. Duration-Based Warning Signs</p>\n<p>15. Silent and Atypical Symptoms</p>\n<p>16. Acidic vs Cardiac Pain</p>\n<p>17. Emergency Red Flags</p>\n<p>18. Stroke Recognition (FAST)</p>\n<p>19. Cardiac Arrest Identification</p>\n<p>20. Collapse and Fainting Evaluation</p>\n<p>21. Heart Attack Symptom Patterns</p>\n<p>22. Risk Assessment (KING Tool)</p>\n<p>23. When to Call Ambulance</p>\n<p>24. First Response at Home</p>\n<p>25. Ambulance Systems and Equipment</p>\n<p>26. Emergency Department Management</p>\n<p>27. Evaluation of Heart Attack</p>\n<p>28. What Doctors Look for in ECG</p>\n<p>29. Troponin and Why Its Value Matters</p>\n<p>30. Risk Stratification in Simple Words</p>\n<p>31. HEART Score and What Doctors Do Next</p>\n<p>32. Simple ESC-Based Early Plan</p>\n<p>33. ICU and Cath Lab Care</p>\n<p>34. Emergency Medicines</p>\n<p>35. Diagnostic Investigations</p>\n<p>36. ECG and Blood Tests</p>\n<p>37. Differential Diagnosis</p>\n<p>38. Hospital Decision Systems</p>\n<p>39. Unstable Angina</p>\n<p>40. Stable Angina</p>\n<p>41. Microvascular Angina</p>\n<p>42. Vasospastic (Prinzmetal’s) Angina</p>\n<p>43. Emergency Drug Therapy</p>\n<p>44. Primary PCI and Stenting</p>\n<p>45. Thrombolysis Therapy</p>\n<p>46. Beta Blockers and ACE Inhibitors</p>\n<p>47. Statins and Antiplatelets</p>\n<p>48. Long-Term Medication Strategy</p>\n<p>49. Lifestyle Modification</p>\n<p>50. Medication Discipline</p>",
+    "<p>51. Cardiac Rehabilitation</p>\n<p>52. Return to Work and Society</p>\n<p>53. Follow-Up and Monitoring</p>\n<p>54. Heart Diary System</p>\n<p>55. Personal Identity Records</p>\n<p>56. Emergency Contact Network</p>\n<p>57. Insurance and Financial Records</p>\n<p>58. Medicine and Allergy Records</p>\n<p>59. Past Medical History</p>\n<p>60. Lifestyle Risk Profile</p>\n<p>61. Excess Clotting Disorders</p>\n<p>62. Bleeding Risk Conditions</p>\n<p>63. Thrombolysis Contraindications</p>\n<p>64. Combined Risk Factors</p>\n<p>65. Blood Pressure Records</p>\n<p>66. Diabetes Monitoring</p>\n<p>67. Cholesterol Tracking</p>\n<p>68. ECG Archiving</p>\n<p>69. Imaging Documentation</p>\n<p>70. Job Pattern Analysis</p>\n<p>71. Work Stress Evaluation</p>\n<p>72. Financial Stability</p>\n<p>73. Emotional Fulfillment</p>\n<p>74. Dietary Pattern Review</p>\n<p>75. Processed Food Risks</p>\n<p>76. Hidden Sugar Intake</p>\n<p>77. Type-A Personality</p>\n<p>78. Behavioural Risk Habits</p>\n<p>79. Chest Pain Action Plan</p>\n<p>80. Risk Reduction Strategy</p>\n<p>81. Stress Management</p>\n<p>82. Exercise Planning</p>\n<p>83. Addiction Control</p>\n<p>84. Family Counseling</p>\n<p>85. Spiritual Balance</p>\n<p>86. Annual Heart Review</p>\n<p>87. Family Risk Mapping</p>\n<p>88. Early Warning Monitoring</p>\n<p>89. Digital Health Tools</p>\n<p>90. Home Health Culture</p>\n<p>91. Summary and Learning</p>\n<p>92. Commitment to Action</p>\n<p>93. Family Health Pledge</p>\n<p>94. Final Message</p>\n<p><strong>Reference: </strong><em>American Heart Association and European Society of Cardiology</em></p>\n<p><h1>Preface</h1><p>This book is written for wives, children, and families who want to protect the man who protects them every day. Many husbands ignore tiredness, chest pain, stress, high blood pressure, diabetes, and poor sleep because they keep putting family first. This loving sacrifice is noble, but it can also become dangerous when warning signs are missed. The aim of this book is simple: to explain heart health in clear language so families can notice danger early, support treatment wisely, and build healthier routines at home. It is not written to create fear. It is written to create awareness, readiness, and care. When a family understands the heart, it becomes stronger. When a husband's heart is protected, the whole home rests more peacefully.</p>",
+    "<p><h1>Disclaimer</h1><p>This book is for education and family awareness. It does not replace professional medical consultation, diagnosis, or treatment. Chest pain, breathlessness, collapse, severe sweating, sudden weakness, stroke signs, or suspected heart attack always need urgent medical attention. Never delay hospital care because of anything read in this book. Treatment decisions must be made by qualified doctors according to the patient's condition, reports, and emergency needs. Medicines should never be started, stopped, or changed without medical advice. The purpose of this book is to help families understand heart care in simple language so they can respond earlier, ask better questions, and support recovery with love, discipline, and wisdom. By reading this book, you acknowledge that the author and publisher are not liable for any consequences</p>\n<p>resulting from use of this information.</p>\n<p><h1>Dedication</h1><p>This book is lovingly dedicated to every husband and father who keeps working through tiredness, hides his pain, and gives his strength to the family before himself. It is dedicated to every wife who wants to protect the heart that protects the home, and to every child who wants to keep a father strong, present, and safe for many years. May this book help families notice warning signs earlier, take action more wisely, and create homes where love is expressed not only through sacrifice, but also through rest, care, food, kindness, and timely treatment.</p>\n<p><h1>Chapter 1 - Heart Function and Importance</h1><p>The heart is a small organ, but its duty is very big. It sends blood, oxygen, warmth, and energy to the whole body. The brain, lungs, kidneys, hands, and feet all depend on it. It works quietly every second, day and night, without asking for rest. When the heart stays healthy, the body feels active, steady, and peaceful. When it becomes weak, many parts of life begin to struggle. That is why the heart deserves daily love and protection. Good food, regular walking, enough sleep, less stress, and timely checkups help greatly. A family that understands the value of the heart becomes wiser and more prepared. Caring for the heart is caring for life, home, and the people we love.</p>",
+    "<p><h1>Chapter 2 - Anatomy of the Heart</h1><p>The heart has four chambers, walls, and valves. The two upper chambers receive blood. The two lower chambers pump blood forward. The valves act like doors. They open at the right time and close at the right time. This helps blood move in one direction. The heart also has vessels attached to it, bringing blood in and carrying blood out. Though it is small, its design is beautiful and exact. Every part has a job, and all parts must work together smoothly. When families understand the parts of the heart, fear becomes less and respect becomes more. This knowledge helps people understand reports, ask questions, and notice danger earlier. Understanding the heart is the beginning of protection for every family.</p>\n<p><h1>Chapter 3 - Chambers and Blood Flow</h1><p>Blood moves through the body in a fixed and wonderful path. Used blood comes to the right side of the heart. From there it goes to the lungs and receives oxygen. Then it returns to the left side of the heart. After that, the heart pumps it to the whole body. This journey happens every second of life. It keeps the brain alert, the muscles active, and the organs alive. When blood flows well, the body feels stronger and healthier. When flow slows or becomes blocked, weakness, breathlessness, and danger may begin. That is why circulation matters so much. Walking, healthy food, diabetes control, and blood pressure care all help blood move better. Good blood flow is one of the foundations of good life.</p>\n<p><h1>Chapter 4 - Electrical System of the Heart</h1><p>The heart has its own electrical system. This natural current starts each heartbeat and keeps the rhythm steady. It tells the chambers when to fill and when to pump. Because of this timing, blood moves smoothly and the body stays stable. If this electrical system becomes disturbed, the heartbeat may become too fast, too slow, or irregular. Then a person may feel weakness, dizziness, breathlessness, palpitations, or even collapse. This is why ECG testing is important. It records the heart’s electrical activity and helps doctors understand hidden rhythm problems. Families should know that not all heart danger comes from blocked vessels. Rhythm problems can also be serious. Good sleep, less stress, correct medicines, and early medical care help protect the heart’s steady rhythm every day.</p>",
+    "<p><h1>Chapter 5 - Coronary Circulation</h1><p>The heart sends blood to the whole body, but it also needs blood for itself. This blood comes through small vessels called coronary arteries. These vessels bring oxygen and nourishment to the heart muscle. If they become narrow, the heart begins to suffer. If one becomes fully blocked, a heart attack may happen. Many people think the heart is strong enough to manage everything, but even this strong organ depends on these delicate vessels. Smoking, diabetes, high cholesterol, high blood pressure, and stress slowly damage them over time. Protecting the coronary arteries is one of the most important parts of heart care. Healthy food, walking, proper treatment, and regular checkups help keep these vessels open. When the heart gets its own blood well, the whole body benefits.</p>\n<p><h1>Chapter 6 - Blockage Formation Mechanism</h1><p>A blockage in a heart vessel does not appear suddenly. It begins slowly over many years. The inner lining of the vessel gets injured by smoking, high sugar, high pressure, unhealthy food, and stress. Once the lining becomes weak, fat and cholesterol begin to settle there. Slowly the passage becomes narrower. At first there are no symptoms, so many people feel safe and continue harmful habits. This silent beginning is why prevention matters so much. By the time chest pain appears, disease may already be well advanced. Families should understand that blockage is not one sudden event. It is a long process built by daily choices. Every healthy meal, every walk, every controlled sugar value, and every peaceful habit helps reduce this silent damage and protect the future.</p>\n<p><h1>Chapter 7 - Plaque Development</h1><p>Plaque is a fatty build-up that forms inside heart vessels over time. It is made from cholesterol, inflammation, and damaged cells. In the beginning it may be small and silent. Later it becomes thicker, harder, and more dangerous. A person may feel completely normal while plaque is growing quietly inside. That is why heart disease can surprise families. Plaque does not only narrow the vessel. Sometimes it becomes weak and breaks suddenly. Then a clot may form on it and block blood flow quickly. This can lead to a heart attack. Controlling cholesterol is important because it helps slow plaque growth and makes the plaque more stable. Healthy food, exercise, weight control, and regular medicines can protect the vessels. Small daily care can prevent large future damage to the heart.</p>",
+    "<p><h1>Chapter 8 - Clot Formation Process</h1><p>A heart attack often becomes sudden because of clot formation. When a plaque inside a vessel breaks, the body tries to repair that injured area. Platelets quickly gather there and stick together. This is helpful in an outside wound, but inside a narrow heart vessel it can be dangerous. The growing clot blocks blood flow and stops oxygen from reaching the heart muscle. Then pain begins, and damage starts within minutes. This is why quick treatment matters so much. Families should understand that the vessel may have been narrow for years, but the clot makes the event suddenly severe. Aspirin and other emergency medicines are often used because they reduce clot formation. Fast movement to medical care can save heart muscle. Delay allows more damage and makes recovery harder for the patient.</p>\n<p><h1>Chapter 9 - Blood Thickness and Flow</h1><p>Blood should move smoothly through the body. When it becomes thicker or stickier, circulation becomes less healthy and the risk to the heart increases. Dehydration, smoking, diabetes, high fats, and inflammation can make blood flow less freely. Thick blood also makes clot formation easier inside a narrow vessel. This adds more danger during stress or plaque injury. Families do not need to fear this idea, but they should understand what helps blood stay healthier. Good water intake, diabetes control, movement, stopping smoking, and the right medicines all improve blood flow. Doctors sometimes give tablets that keep the blood thinner and reduce clot formation. Good flow means better oxygen supply and less load on the heart. When blood moves well, organs work better, healing improves, and emergency risk becomes lower.</p>\n<p><h1>Chapter 10 - Stress and Heart Triggers</h1><p>Stress does not stay only in the mind. It affects the whole body, especially the heart. During stress, the body releases chemicals that increase heart rate, raise blood pressure, and tighten blood vessels. If this happens again and again, the heart remains under extra load. Stress also disturbs sleep, worsens diabetes, increases anger, and pushes some people toward smoking or overeating. In a person with heart disease, sudden emotional stress can even trigger a serious event. Families should never think stress is a small problem. It is a real health burden. Calmness is not weakness. It is protection. Deep breathing, walking, prayer, better time planning, family support, and regular sleep all help reduce stress. A peaceful mind supports a steadier heart, healthier vessels, and wiser daily choices for the whole family.</p>",
+    "<p><h1>Chapter 11 - Early Warning Signals</h1><p>The heart often gives warning signs before a major crisis happens. Repeated chest heaviness, breathlessness on walking, unusual tiredness, sweating with small effort, palpitations, reduced stamina, or swelling can all be early clues. Many people ignore these signs and call them gas, age, weakness, stress, or poor sleep. This delay can be costly. A symptom that returns again and again is not a small matter. It is the body asking for attention. Families should learn to respect these changes, especially when they appear suddenly or become more frequent. Early medical evaluation can find disease before a disaster begins. Many lives are saved at the warning stage, not only in the emergency stage. When the heart whispers, wise families listen early, act calmly, and protect the future.</p>\n<p><h1>Chapter 12 - Types of Heart Attacks</h1><p>Not all heart attacks are the same. Some happen when a heart vessel becomes fully blocked. These are often severe and need urgent treatment to restore blood flow quickly. Some happen with a partial blockage. Blood still passes a little, but the danger remains real. There are also warning stages, such as unstable angina, where pain appears before permanent damage becomes large. Some heart attacks are silent and show unusual symptoms, especially in women, older adults, and people with diabetes. This is why families should never judge severity only by the amount of pain. Doctors use symptoms, ECG, and blood tests to understand which type of heart problem is present. Fast recognition is important in every type. Early treatment can save heart muscle, reduce weakness, and improve the future.</p>\n<p><h1>Chapter 13 - Exertional Chest Pain</h1><p>Chest pain that starts during walking, climbing stairs, carrying weight, or doing work must be taken seriously. During activity, the heart needs more oxygen. If the heart vessels are narrow, they cannot send enough blood, and pain or pressure may begin. Some people stop, rest for a moment, and feel slightly better. Then they ignore the warning. This is risky. Relief with rest does not mean safety. It may be an early sign that the heart is already under stress. Families should notice the pattern. If discomfort comes again and again with effort, the heart is asking for attention. Timely tests, proper medicines, and healthier living can prevent future damage. A wise family listens when the heart complains during work, because early care can protect many peaceful years ahead.</p>",
+    "<p><h1>Chapter 14 - Duration-Based Warning Signs</h1><p>The length of chest pain is very important. Brief discomfort may come from many causes, but pain that continues for more than fifteen or twenty minutes should never be ignored. If pain stays, returns again, or comes even at rest, the heart may not be getting enough blood. Many families wait, hoping the pain will settle after rest, tea, prayer, or one tablet. This waiting can cost precious time. In heart disease, time is extremely important. The longer the pain continues, the more heart muscle may suffer. Even if the pain becomes less later, damage may already have started. Families should move toward medical care early, not late. Quick, calm action is an act of love. Respecting long-lasting pain protects the heart and reduces regret for the family later.</p>\n<p><h1>Chapter 15 - Silent and Atypical Symptoms</h1><p>Heart trouble does not always come with strong chest pain. Sometimes it shows itself through unusual signs. A person may feel sudden tiredness, sweating, nausea, back pain, jaw pain, breathlessness, weakness, or a strange feeling that something is wrong. This is more common in women, older adults, and people with diabetes. Because these signs do not look like the usual picture of a heart attack, families may become confused and delay help. That delay can be dangerous. The heart does not speak in the same way in every person. Families should learn to notice symptoms that are sudden, unusual, or out of character for that person. It is always safer to check early than to regret late. Quiet warning signs still deserve quick attention, warm concern, and careful medical evaluation.</p>\n<p><h1>Chapter 16 - Acidic vs Cardiac Pain</h1><p>Many people confuse heart pain with gas or acidity because both can cause discomfort in the chest or upper stomach. Gas pain may feel burning, bloating, or fullness and may improve with antacids or a change of position. Heart pain is often deeper, heavier, tighter, or more pressing. It may spread to the arm, jaw, shoulder, or back. It may come with sweating, weakness, breathlessness, or fear. But the truth is that the difference is not always easy to judge at home. That is why guessing can be dangerous. When there is real doubt, it is safer to think of the heart first. Early medical evaluation is wiser than delay. Families should never feel shy about taking chest discomfort seriously. Respecting symptoms early protects life, peace, and the future.</p>",
+    "<p><h1>Chapter 17 - Emergency Red Flags</h1><p>Some signs mean the body needs urgent help and should not be made to wait. Severe chest pain, sudden breathlessness, cold sweating, fainting, confusion, pain going to the left arm or jaw, sudden weakness, or collapse are danger signals. A person may look pale, frightened, restless, or unusually quiet. These are not symptoms to watch casually at home. This is the time for quick, calm action. Families should not waste minutes trying many home remedies, calling too many people, or searching the internet. What helps most is clear thinking and early movement toward medical care. Emergency signs are not meant to create panic. They are meant to create action. Families who recognize them early can protect heart muscle, brain function, and sometimes the whole future of the home with one wise decision.</p>\n<p><h1>Chapter 18 - Stroke Recognition (FAST)</h1><p>Stroke is a sudden attack on the brain and must be treated as an emergency. A simple way to remember the warning signs is FAST. F means face drooping, where one side looks weak. A means arm weakness, when one arm cannot be lifted properly. S means speech trouble, when words become slurred or confused. T means time to act immediately. If even one of these signs appears suddenly, emergency help should be sought without delay. Families should not wait for the person to improve at home. Stroke can leave lasting weakness, speech problems, memory difficulty, and loss of independence if treatment is late. Quick action can reduce damage and protect life. Parents who remember FAST carry a simple but powerful lifesaving tool in their minds every single day.</p>\n<p><h1>Chapter 19 - Cardiac Arrest Identification</h1><p>Cardiac arrest is one of the most serious medical emergencies. In this condition, the heart suddenly stops pumping blood properly. The person may collapse, become unconscious, and stop normal breathing. This is not the time for waiting, guessing, or trying to wake the person slowly. Immediate action is needed. Emergency services should be called at once. If someone trained in CPR is present, those steps should begin quickly. If a defibrillator is available, it may help restore the heart rhythm. Families should know that cardiac arrest is different from weakness, sleep, or ordinary fainting. Every passing minute reduces the chance of survival. But early action can still save life. Learning about cardiac arrest is not frightening knowledge. It is protective knowledge. Prepared families can turn panic into courage and give hope a chance.</p>",
+    "<p><h1>Chapter 20 - Collapse and Fainting Evaluation</h1><p>Not every collapse is simple weakness, and not every fainting spell is harmless. A person may collapse because of a rhythm problem, heart disease, stroke, low blood pressure, dehydration, or another serious cause. If fainting happens with chest pain, breathlessness, sweating, confusion, or paleness, it should be taken very seriously. Families should first keep the person safe, check breathing, avoid crowding, and seek help when needed. It is not wise to force water, make the person walk, or send them back to routine too quickly. Even if the person wakes up soon, the reason still matters. Collapse is often the body’s loud request for attention. Early evaluation can prevent a bigger crisis later. Calm observation, kind support, and timely care can protect both the patient and family.</p>\n<p><h1>Chapter 21 - Heart Attack Symptom Patterns</h1><p>A heart attack often shows a pattern, not just one symptom. The person may feel chest heaviness, tightness, pressure, or pain. The feeling may spread to the left arm, shoulder, jaw, back, or upper stomach. Some people sweat suddenly. Some feel breathless, weak, sick, or frightened. Some feel only unusual tiredness. Symptoms may start during walking, stress, anger, or even at rest. They may come and go, or they may stay. Families should not wait for a perfect textbook picture. The pattern is more important than one single complaint. If several signs come together, the heart must be respected. Early recognition saves time. Saved time protects heart muscle. A careful family watches the whole picture and acts with calmness and love.</p>\n<p><h1>Chapter 22 - Risk Assessment (KING Tool)</h1><p>Risk assessment means looking at all the important clues together. Doctors do not judge chest pain by one symptom alone. They ask what the pain feels like, when it started, how long it lasts, whether it spreads, and whether it worsens with activity. They also look at age, diabetes, smoking, blood pressure, cholesterol, family history, ECG changes, and blood test results. All these details help them understand how serious the danger may be. Families do not need to calculate any score at home, but they can help a lot by giving clear and honest information. Good history saves time. Clear details help doctors decide faster and better. Calm observation is useful care. When the story is clear, treatment becomes safer, quicker, and more accurate.</p>",
+    "<p><h1>Chapter 23 - When to Call Ambulance</h1><p>An ambulance should be called when chest pain is severe, lasts more than a few minutes, returns again, or comes with sweating, breathlessness, fainting, confusion, or weakness. It should also be called when stroke signs appear or when the patient looks too unwell to travel safely in a car. Many families delay because they hope the symptoms will settle. Some choose a private car to save time. But the road itself can become risky if the patient worsens on the way. An ambulance brings trained staff, oxygen, monitoring, and emergency support. It also warns the hospital before arrival. This helps treatment begin sooner. Calling an ambulance is not fear. It is wisdom. Safe transport is part of treatment. Quick help at the right time can protect both life and heart muscle.</p>\n<p><h1>Chapter 24 - First Response at Home</h1><p>The first response at home should be simple and calm. The patient should stop all work at once and sit or lie in a comfortable position. Tight clothes should be loosened. Fresh air should be allowed into the room. Family members should stay calm and speak gently. Fear in the room makes the patient more frightened. Do not force tea, food, walking, or repeated movement. Watch for sweating, breathlessness, weakness, confusion, or worsening pain. If the pain is strong or lasts beyond a few minutes, medical help should be called without delay. Home care is not full treatment. It is only the first safe step before professional care begins. Quiet, quick, kind action at home can prevent confusion and protect the patient during those important first minutes.</p>\n<p><h1>Chapter 25 - Ambulance Systems and Equipment</h1><p>An ambulance is more than a vehicle. It is a moving place of safety. It may carry oxygen, a monitor, emergency medicines, a stretcher, and trained staff who know how to support the patient during travel. In heart emergencies, this matters because breathing may worsen, the heartbeat may change, or collapse may happen suddenly. A private car cannot offer this kind of medical support. Ambulance teams can also speak with the hospital before arrival, so doctors are ready sooner. This saves precious minutes. Families should understand that the journey is also part of treatment. Reaching safely is as important as reaching fast. Choosing an ambulance is a caring decision. It gives the patient protection on the road and gives the family greater peace during a frightening time.</p>",
+    "<p><h1>Chapter 26 - Emergency Department Management</h1><p>The emergency department is where quick care begins. As soon as the patient arrives, doctors and nurses check pulse, blood pressure, breathing, oxygen level, and the pattern of symptoms. An ECG is often done early. Blood samples are taken. Medicines may start quickly. To the family, this can look fast and frightening. But this speed is meant to protect the heart and reduce damage. The staff are not creating panic. They are responding to danger with order and training. Families can help by giving a clear history and staying calm. Honest details about timing, medicines, allergies, diabetes, blood pressure, and previous heart trouble are very useful. The emergency room is where confusion becomes clearer. Early action there can protect the heart, reduce complications, and improve recovery.</p>\n<p><h1>Chapter 27 - Evaluation of Heart Attack</h1><p>When a patient comes with chest pain, doctors first listen carefully to the story. They want to know when the pain started, what brought it on, what it feels like, where it is felt, whether it spreads, how strong it is, and how long it lasts. They also ask if the pain becomes worse on walking, stress, or climbing stairs. They ask about sweating, breathlessness, nausea, weakness, diabetes, smoking, blood pressure, and past heart disease. This careful history is very important. It helps doctors understand whether the pain may be from the heart or from another cause. A good history saves time and reduces mistakes. Families can help greatly by telling the story clearly and honestly. A careful beginning often leads to safer and faster treatment.</p>\n<p><h1>Chapter 28 - What Doctors Look for in ECG</h1><p>The ECG is one of the first tests done in chest pain. It shows the electrical pattern of the heart. Doctors look for signs that the heart muscle is not getting enough blood. They look for changes such as ST elevation, ST depression, T-wave changes, and abnormal rhythm. Some of these changes suggest a major emergency. Others suggest reduced blood flow or heart strain. One early ECG may not show the whole truth, especially if the pain has just started. That is why doctors may repeat the ECG if pain continues or comes back. Families should not feel falsely relaxed after one normal tracing. The ECG is a fast and helpful test, but it must be read along with symptoms and blood tests.</p>",
+    "<p><h1>Chapter 29 - Troponin and Why Its Value Matters</h1><p>Troponin is a protein inside heart muscle cells. When the heart muscle gets injured, troponin leaks into the blood. That is why this test is very important in chest pain. A normal troponin is reassuring, but it does not always remove danger if the pain started very early. Doctors often repeat the test because the value may rise later. In the HEART score, troponin is judged by how high it is above the normal limit. A normal value scores low. A value one to three times above normal scores more. A value above three times normal scores highest. So the meaning is about the level, not about how many times the blood is taken. This helps doctors judge how serious the danger may be.</p>\n<p><h1>Chapter 30 - Risk Stratification in Simple Words</h1><p>Risk stratification means sorting the patient into low risk, medium risk, or high risk. Doctors do this because not every chest pain patient needs the same level of treatment. They look at the full picture. They consider the chest pain story, ECG changes, troponin level, age, diabetes, smoking, blood pressure, cholesterol, and past heart disease. A patient with fewer risk factors and normal tests may be lower risk. A patient with abnormal ECG, raised troponin, and many risk factors may be higher risk. This careful sorting helps doctors decide who can go home safely, who needs observation, and who needs urgent specialist care. It is not a delay. It is a safety step. Matching treatment to danger helps protect the patient more wisely.</p>\n<p><h1>Chapter 31 - HEART Score and What Doctors Do Next</h1><p>The HEART score is a simple emergency score used in chest pain. It looks at five things: History, ECG, Age, Risk factors, and Troponin. The total score goes from 0 to 10. In simple terms, a score of 0 to 3 usually means low risk. A score of 4 to 6 usually means moderate risk. A score of 7 to 10 usually means high risk. Low-risk patients may go home or stay briefly for observation if repeat checks remain normal. Moderate-risk patients usually need more tests and closer watch. High-risk patients usually need admission and urgent heart care. The ESC 0/1-hour rule-out and rule-in approach has been validated, and AHA guidance also supports early high-sensitivity troponin-based pathways for chest pain assessment.</p>",
+    "<p><h1>Chapter 32 - Simple ESC-Based Early Plan</h1><p>The early plan is simple in principle. First, doctors take the chest pain history carefully. Then they do the ECG. Then they check troponin. If the picture is clearly dangerous, treatment moves quickly. If the first ECG is not clear and symptoms continue or come back, another ECG may be done. If the first troponin is normal but doctors still suspect heart trouble, they may repeat it early to see if it rises. Then the patient is placed into low risk, medium risk, or high risk. After that, doctors decide whether the patient can go home, stay for observation, or needs urgent treatment. This step-by-step method helps reduce missed heart attacks and avoids unsafe discharge. Families should know that this careful process is done for safety, not delay.</p>\n<p><h1>Chapter 33 - ICU and Cath Lab Care</h1><p>Some patients need closer care than a normal ward can provide. The ICU is a place where heartbeat, breathing, oxygen, and blood pressure are watched continuously. This helps doctors notice danger early and act quickly. The cath lab is a special place where doctors look inside the heart vessels and treat blockages if needed. Families may feel scared when they hear these names, but these places are meant to protect life. Machines, wires, and monitors may look serious, yet they are signs of careful watchfulness. The patient is being looked after closely because the heart can change quickly in the early stage. ICU and cath lab care often give the patient a stronger chance. Timely attention and close monitoring can greatly improve safety and recovery.</p>\n<p><h1>Chapter 34 - Emergency Medicines</h1><p>Emergency medicines are given early because the first minutes matter a lot. Some medicines reduce pain. Some improve blood flow. Some reduce the load on the heart. Some keep the blood thinner and prevent clot formation. Oxygen may be given if needed. Every medicine has a purpose. Doctors choose them after checking symptoms, blood pressure, pulse, ECG, and test results. One patient may need more medicines. Another may need fewer. Families should not feel afraid when treatment starts quickly. These medicines are meant to protect heart muscle and reduce early damage. They also prepare the patient for the next step, such as monitoring, angiography, or stenting. Early treatment can make a big difference and give the heart a safer beginning.</p>",
+    "<p><h1>Chapter 35 - Diagnostic Investigations</h1><p>Doctors cannot depend on symptoms alone. They need tests to understand what is truly happening inside the body. Diagnostic investigations help them see whether the problem is a heart attack, angina, rhythm trouble, lung disease, severe acidity, or another serious illness. Some tests check the heart’s electrical activity. Some show heart muscle injury. Some show how well the heart is pumping. Other tests help rule out dangerous look-alike conditions. Families sometimes become impatient when many tests are advised, but each test answers a different question. Good diagnosis prevents wrong treatment. It also helps doctors choose the safest and most useful next step. Investigations are done to bring clarity, reduce mistakes, and protect the patient with better medical decisions.</p>\n<p><h1>Chapter 36 - ECG and Blood Tests</h1><p>ECG and blood tests are among the most important early tools in heart care. The ECG shows the electrical activity of the heart. It can reveal blocked blood flow, rhythm problems, or strain on the heart muscle. Blood tests can show whether heart muscle has been injured. Sometimes the first ECG or first blood test may not show the full picture. That is why doctors may repeat them after some time. Families should not become careless because one early test looks normal. They should also not lose hope too quickly. Doctors often need to compare test results over time before making final decisions. These tests quietly guide treatment. They help doctors act at the right time and protect the patient from dangerous delay.</p>\n<p><h1>Chapter 37 - Differential Diagnosis</h1><p>Chest pain does not always come from the heart. It may also come from lung disease, acidity, muscle strain, anxiety, or aortic disease. Some of these illnesses can look very similar to heart trouble. That is why doctors must separate one cause from another before deciding treatment. This careful process protects the patient from wrong medicines and wrong decisions. Families should not feel upset if the answer is not immediate. Good medicine is not guesswork. It is careful truth-finding. Doctors may ask many questions, repeat tests, or order scans to understand the real cause. This careful approach is also a form of care. A correct diagnosis gives safer treatment and a clearer path forward. Patience during this stage can help protect life and reduce later complications.</p>",
+    "<p><h1>Chapter 38 - Hospital Decision Systems</h1><p>Hospitals make decisions in heart care with both speed and caution. Doctors study symptoms, ECG changes, blood tests, blood pressure, age, diabetes, kidney function, and overall stability before choosing the next step. Some patients need urgent stenting. Some need close monitoring first. Some need medicines, scans, or transfer to a bigger center. Families may feel anxious while waiting, but these decisions carry great responsibility. Doctors are trying to choose what is safest and most useful at that moment. Good judgment is not slow care. It is careful care. Families help when they stay calm, answer clearly, and trust the medical team. The right decision at the right time can reduce damage and improve recovery. Wise hospital decisions shape the future that follows.</p>\n<p><h1>Chapter 39 - Unstable Angina</h1><p>Unstable angina is a serious warning stage. Chest pain may come at rest, may last longer than before, or may return again and again in a worrying way. This means blood flow to the heart has become unsafe and unstable. Blood tests may still look normal, yet the risk remains high because a bigger attack can happen soon. Families should never ignore pain that comes at rest. This is not a symptom to watch casually at home. It needs medical care quickly. Unstable angina is the heart asking for help before more damage happens. Early treatment at this stage can prevent a major heart attack. A warning is a mercy if the family listens in time. Calm speed can protect heart muscle and make the future safer.</p>\n<p><h1>Chapter 40 - Stable Angina</h1><p>Stable angina usually follows a pattern. The pain comes during walking, climbing stairs, carrying weight, or emotional stress, and it becomes less with rest. This happens because the heart vessels are narrow and cannot supply enough blood during extra effort. Because the pain appears in a familiar way, many people ignore it and adjust their routine instead of taking treatment. That is not wise. Stable angina is still a warning. It means the heart needs attention, tests, medicines, and healthier daily habits. With timely care, many people live safely and avoid bigger emergencies. Families should not treat repeated effort-related chest pain as normal. The heart is speaking clearly. Listening early protects the future and keeps life more peaceful.</p>",
+    "<p><h1>Chapter 41 - Microvascular Angina</h1><p>Microvascular angina affects the very small vessels of the heart. These small vessels may not show major blockage on routine tests, yet the patient can still feel real pain, pressure, tiredness, or breathlessness. This condition can be confusing because bigger vessels may look normal. But small vessels are also very important. They quietly feed the heart muscle. This problem is more common in women and in people with diabetes or long-term stress. Families should never dismiss such symptoms as imaginary. The pain is real, even if the tests are not dramatic. Good care may include medicines, stress control, walking, better sleep, and regular follow-up. Kind support helps a lot. Invisible disease can still cause real suffering, and careful treatment can still bring meaningful relief.</p>\n<p><h1>Chapter 42 - Vasospastic (Prinzmetal’s) Angina</h1><p>Vasospastic angina happens when a heart vessel suddenly tightens for a short time and reduces blood flow. The pain often comes at rest and may appear during late night or early morning hours. Because the vessel relaxes later, tests may sometimes look better afterward. This can confuse families, but the pain is real. Smoking, stress, cold exposure, and certain medicines can sometimes trigger these spasms. The good news is that proper treatment can help greatly. With the right medicines and healthier habits, many patients improve well and live safely. Night-time chest pain should never be ignored. It is better to check early than to guess at home. A calm medical evaluation can bring clarity, reduce fear, and protect the heart from future trouble.</p>\n<p><h1>Chapter 43 - Emergency Drug Therapy</h1><p>Emergency drug therapy means the medicines given early to protect the heart. These medicines are started quickly because the first minutes are very important. Some reduce pain. Some improve blood flow. Some reduce the load on the heart. Some keep the blood thinner and prevent clot formation. Oxygen may be given if needed. Doctors choose these medicines after checking blood pressure, pulse, symptoms, ECG, and blood tests. Every medicine has a role. Families should not feel frightened when many treatments begin close together. This is often the safest way to reduce early heart damage. These medicines also prepare the patient for the next step, such as close monitoring, angiography, or stenting. Quick treatment and calm trust make early care stronger and safer.</p>",
+    "<p><h1>Chapter 44 - Primary PCI and Stenting</h1><p>Primary PCI means stenting done at the beginning of a heart attack. The aim is simple. Open the blocked vessel quickly so heart damage stays minimal. Doctors pass a thin tube into the vessel, find the blocked area, open it, and place a stent. A stent is a small medicine-coated spring. It keeps the vessel open and helps blood flow return well. When blood returns early, more heart muscle is saved. Pain often becomes less. Future weakness may also become less. Families may feel scared when they hear about this procedure, but it is done to protect the heart quickly. In many patients, early stenting changes the whole future. Timely action can save precious muscle and give the patient a stronger chance of recovery.</p>\n<p><h1>Chapter 45 - Thrombolysis Therapy</h1><p>Thrombolysis is a clot-dissolving treatment. It is used when early stenting is not immediately available. Special medicine is given to melt the clot inside the vessel. This helps blood flow return to the heart muscle. It works best when given early. The earlier it is used, the more heart muscle may be saved. Doctors first check whether it is safe because some patients have a high bleeding risk. Families should quickly share any history of stroke, surgery, ulcers, or bleeding problems. This helps doctors choose safely. When used for the right patient at the right time, thrombolysis can save life and reduce heart damage. It is an important emergency treatment. Quick decisions and honest communication help this treatment give the best possible benefit.</p>\n<p><h1>Chapter 46 - Beta Blockers and ACE Inhibitors</h1><p>Beta blockers and ACE inhibitors are important medicines after a heart attack. Beta blockers slow the heartbeat. This reduces the load on the heart and lowers its oxygen need. ACE inhibitors relax blood vessels. This helps blood move more easily and reduces pressure on the heart. Together, these medicines protect the heart for the future. The patient may not feel their benefit immediately, but they work quietly every day. They should not be stopped suddenly without doctor advice. Families should understand that these tablets are for protection, not only for symptoms. Regular use can reduce future problems and support a steadier recovery. Good follow-up is also important. These medicines quietly guard the heart and help the patient move toward safer, calmer days ahead.</p>",
+    "<p><h1>Chapter 47 - Statins and Antiplatelets</h1><p>Statins and antiplatelet medicines protect the heart after a heart attack or stenting. Statins lower harmful cholesterol and make artery plaques more stable. This reduces future blockage risk. Antiplatelet medicines keep the blood thinner and prevent clot formation inside narrowed vessels or inside a stent. These tablets often work quietly. The patient may not feel a dramatic change, but they give important protection every day. They should not be stopped suddenly without doctor advice. Missing doses may invite another attack. Families should help with regular timing, refills, and follow-up visits. These medicines are small, but their work is big. With steady use, they help keep blood flowing safely and protect the future of the whole family today always each day.</p>\n<p><h1>Chapter 48 - Long-Term Medication Strategy</h1><p>After a heart attack, treatment does not end when pain becomes less. Long-term medicines continue because they protect the heart every day. Different tablets have different jobs. Some keep the blood thinner. Some lower cholesterol. Some reduce blood pressure. Some reduce the load on the heart. Doctors choose the plan according to age, diabetes, kidney function, blood pressure, test results, and type of heart problem. The patient should never stop or change medicines without advice. Feeling better does not mean danger is gone. Regular follow-up is needed to adjust doses and watch for side effects. Families should treat this medicine plan as daily protection. Steady use, careful reviews, and simple routines help the heart stay safer for years ahead together.</p>\n<p><h1>Chapter 49 - Lifestyle Modification</h1><p>Life after a heart attack can still be warm, useful, and meaningful. But it needs healthy changes. Food should become lighter, less salty, and less oily. Smoking must stop. Alcohol should be taken only with doctor advice. Daily walking, enough sleep, regular medicines, and calmer routines help the heart greatly. Stress should be reduced with prayer, breathing, gentle exercise, or quiet family time. Lifestyle change is not punishment. It is protection. Small changes done every day can reduce pressure on the heart and lower the chance of another attack. Families should encourage good habits with kindness, not criticism. A healthier home makes recovery easier and gives the patient more confidence, more safety, and better years ahead with steady hope together.</p>",
+    "<p><h1>Chapter 50 - Medication Discipline</h1><p>Medicines help only when they are taken regularly and correctly. Many patients feel better after discharge and start thinking tablets are no longer needed. This is dangerous. Heart disease may continue silently even when pain is gone. Missing doses, changing timings carelessly, or stopping medicines without advice can increase risk again. Families should make a simple routine. Pill boxes, alarms, written charts, and gentle reminders can help greatly. If a medicine causes dizziness, weakness, cough, or stomach trouble, the doctor should be informed. The patient should not stop treatment alone. Discipline is loving protection. A few missed days matter always. Regular medicine use keeps the heart safer and helps recovery stay steady, peaceful, and stronger day after day for life.</p>\n<p><h1>Chapter 51 - Cardiac Rehabilitation</h1><p>Cardiac rehabilitation is a recovery program for people after heart illness. It is not only exercise. It also includes education, food advice, stress care, and emotional support. The patient learns how much walking is safe, how to build strength slowly, and how to avoid doing too much too soon. Rehabilitation also helps reduce fear. Many patients become anxious after a heart attack and stop activity unnecessarily. This can delay recovery. A supervised program brings confidence back step by step. Families should see rehabilitation as healing school for the heart. It teaches safe movement, safer habits, and better understanding. With regular participation, many patients feel stronger, calmer, and more hopeful. Recovery becomes more organized and future risk becomes lower with time.</p>\n<p><h1>Chapter 52 - Return to Work and Society</h1><p>Returning to work should happen with wisdom, not hurry. Some patients try to prove strength too early. Others become afraid and avoid normal life completely. Both extremes can harm recovery. Doctors usually guide the timing according to symptoms, heart function, type of work, travel needs, and stress level. Light work may begin earlier. Heavy labor, night duty, and high-pressure jobs may need more caution. Social life also should return slowly and comfortably. The patient should not feel pushed, judged, or overprotected. Gentle confidence is best. Families can help by encouraging rest, medicines, walking, and follow-up. Safe return to routine gives dignity and hope. It helps the patient feel useful again while protecting the heart from unnecessary load and exhaustion again.</p>",
+    "<p><h1>Chapter 53 - Follow-Up and Monitoring</h1><p>Follow-up care continues the treatment after the emergency phase ends. Many problems can grow quietly after discharge. Blood pressure may rise. Sugar may become uncontrolled. Medicines may need adjustment. New symptoms may appear. Regular visits help doctors see these changes early and correct them before they become serious. Follow-up may include blood tests, ECG, blood pressure checks, sugar checks, and sometimes echo. Families should not treat appointments as optional. They are part of treatment. Keeping reports together and noting symptoms clearly can help a lot. Follow-up also reassures the patient and answers many doubts. A review plan protects the heart, supports confidence, and lowers the chance of another crisis. Regular contact with the doctor keeps recovery safer and more organized.</p>\n<p><h1>Chapter 54 - Heart Diary System</h1><p>A heart diary is a simple notebook or file that keeps important health information together. It may contain symptoms, medicine lists, allergies, blood pressure readings, sugar readings, discharge summaries, doctor advice, and test reports. During an emergency, memory may fail because everyone feels frightened. A written record speaks clearly and saves time. Doctors can make quicker and safer decisions when information is ready. A heart diary also helps the family see changes over time. It improves follow-up and reduces confusion. Families should update it after every visit and keep it in an easy place. This is not extra work. It is preparation born from care. One organized diary can prevent mistakes and make future emergencies easier to handle with confidence.</p>\n<p><h1>Chapter 55 - Personal Identity Records</h1><p>Correct identity details are important in medical care. The patient’s full name, age, address, blood group if known, hospital number, and documents should be easy to find. During an emergency, these simple details save time and reduce confusion. Hospitals work faster when the right information is ready. Families should keep copies of identity cards, insurance cards, and previous admission papers in the heart diary or safe file. More than one family member should know where these records are kept. This is not only paperwork. It is part of safety planning. Good preparation helps doctors, protects the patient, and reduces panic in a difficult moment. Small details arranged early can make serious situations calmer and easier to manage for everyone.</p>",
+    "<p><h1>Chapter 56 - Emergency Contact Network</h1><p>Emergency contact records can save time during a crisis. Important numbers should include the main doctor, nearby hospital, ambulance service, close relatives, and one trusted helper who can come quickly. Mobile phones are useful, but batteries can fail, signals can drop, and panic can make searching difficult. That is why backup numbers are wise. Families should keep them in the heart diary, wallet, and notice area. Children and spouses should know where these numbers are kept. Quick contact brings quicker support. Searching at the last moment increases fear and wastes time. A prepared family feels steadier because help is already arranged. A list of numbers may look simple, but in an emergency it becomes a strong shield around the patient.</p>\n<p><h1>Chapter 57 - Insurance and Financial Records</h1><p>Money worries and paperwork often increase stress during heart emergencies. Insurance papers, policy numbers, hospital cards, approval contacts, and payment details should be kept ready in one safe place. When these records are missing, families may panic, argue, or lose time while treatment is going on. Good financial preparation does not remove illness, but it reduces confusion and helps decisions move faster. Families should understand what the policy covers, which hospitals are accepted, and whom to call for urgent approval. Copies should be kept in the heart diary and on a phone if possible. This is not greed or fear. It is practical care. Clear records protect dignity, reduce stress, and support smoother treatment during very difficult moments for everyone.</p>\n<p><h1>Chapter 58 - Medicine and Allergy Records</h1><p>Medicine and allergy records are very important in heart care. Doctors need to know which tablets the patient is already taking, what doses are used, and whether any medicine caused rash, swelling, bleeding, cough, or severe weakness before. This prevents dangerous mistakes. Some medicines should not be mixed. Some need dose changes. Some should be avoided completely if there was a past reaction. Families should not depend only on memory. A written list is safer. It should be updated after every doctor visit. Bringing the list to the hospital can save time and protect the patient. Honest information helps doctors choose wisely. Correct medicine records reduce risk, improve safety, and make treatment smoother during both emergencies and regular follow-up visits.</p>",
+    "<p><h1>Chapter 59 - Past Medical History</h1><p>Past medical history helps doctors understand the present illness better. They need to know about previous heart attacks, stents, bypass surgery, stroke, diabetes, high blood pressure, kidney disease, thyroid trouble, bleeding problems, and operations. Even old illnesses can matter during new treatment. Families sometimes forget details or think some old event is no longer important. But medicine often depends on the whole story. A patient with kidney disease may need dose changes. A patient with past bleeding may need extra caution. This is why a clear history is so useful. Families should keep records and report them honestly. Past illness does not only belong to the past. It guides today’s safety and helps doctors make wiser and more accurate decisions.</p>\n<p><h1>Chapter 60 - Lifestyle Risk Profile</h1><p>A lifestyle risk profile means looking at daily habits that affect the heart. Doctors want to know about smoking, alcohol, sleep, food, walking, stress, work hours, weight, and medicine habits. These details matter because heart disease grows from daily life, not from one day alone. A person may have good treatment, but if harmful habits continue, risk also continues. Writing these habits down can be helpful. It shows where change is needed first. Families should not feel ashamed by this review. It is not for blame. It is for protection. Once habits are seen clearly, better choices become easier. A truthful lifestyle profile helps doctors guide the patient and helps the family build a safer home routine every day.</p>\n<p><h1>Chapter 61 - Excess Clotting Disorders</h1><p>Some people have blood that clots more easily than usual. This can happen because of inherited problems, hormone treatment, autoimmune disease, cancer, or other medical conditions. In such people, clots may form faster inside vessels and increase the chance of heart attack, stroke, or other problems. Families may never know this risk until a major event happens. Doctors may suspect it if a patient has repeated clots, unusual clotting at a young age, or a strong family history. Special blood tests may be needed. These patients may need closer follow-up and sometimes long-term blood-thinning treatment. Families should understand that not all clotting comes from lifestyle alone. Hidden body tendencies can also matter and deserve careful, respectful medical attention over time.</p>",
+    "<p><h1>Chapter 62 - Bleeding Risk Conditions</h1><p>Some patients have the opposite problem. Their bodies bleed more easily than normal. This may happen because of low platelets, liver disease, ulcers, past bleeding, certain medicines, or blood disorders. In heart care, this matters because many important treatments keep the blood thinner. Doctors must balance the need to prevent clot formation with the need to avoid too much bleeding. Families should report nosebleeds, vomiting blood, black stools, bleeding after tooth work, or past hospital admissions for bleeding. Even old bleeding history can matter now. Honest details help doctors choose safely. A patient with bleeding risk can still receive good treatment, but planning must be more careful. Clear information protects the patient and helps the doctor make safer decisions.</p>\n<p><h1>Chapter 63 - Thrombolysis Contraindications</h1><p>Thrombolysis can save heart muscle by dissolving a clot, but it is not safe for everyone. Doctors must first check for conditions that make bleeding more likely. These may include recent stroke, brain bleeding, major surgery, head injury, active internal bleeding, severe uncontrolled blood pressure, or some serious ulcers. In such situations, clot-dissolving medicine may do more harm than good. Families should answer medical questions honestly and quickly. Hiding a recent fall, procedure, or bleeding episode can become very dangerous. This screening is not a delay. It is protection. If thrombolysis is not suitable, doctors choose another plan. Careful selection keeps treatment safer. The right medicine for the right patient at the right time is the goal in heart emergencies.</p>\n<p><h1>Chapter 64 - Combined Risk Factors</h1><p>Heart risk rarely comes from one problem alone. Diabetes, smoking, obesity, high blood pressure, high cholesterol, stress, sleep loss, and lack of exercise often combine and increase danger together. One risk makes another worse. Two risks together can do much more harm than one alone. That is why doctors look at the whole person, not just one report. Families sometimes feel relieved when one value improves, but true protection needs change. Better food, regular walking, medicine discipline, smoking control, sugar control, and calmer routines all matter together. This is called combined risk. The message is simple. Protection must also be combined. Small improvements in many areas often give stronger safety than one big improvement in only one area. Consistency builds heart protection.</p>",
+    "<p><h1>Chapter 65 - Blood Pressure Records</h1><p>Blood pressure often rises and damages the body without causing early pain. It can injure heart vessels, strain the heart, harm the kidneys, and increase stroke risk. That is why regular records matter. One reading alone does not tell the story. Morning and evening checks over time show patterns more clearly. Families should use a proper machine, note the date and time, and bring records to follow-up visits. Very high readings need prompt attention. Very low readings also matter, especially if the patient feels dizzy or weak. Good records help doctors adjust treatment safely. A blood pressure notebook is a simple tool, but it can prevent serious problems. Quiet monitoring today can protect the heart, brain, and years to come.</p>\n<p><h1>Chapter 66 - Diabetes Monitoring</h1><p>Diabetes damages blood vessels slowly and silently. High sugar injures the inner lining of vessels, helps plaque grow faster, and increases heart risk. That is why diabetes monitoring is a major part of heart care. Families should know the importance of fasting sugar, post-meal sugar, and HbA1c. One good reading does not mean control is always good. Patterns over time matter more. Food, exercise, medicines, sleep, and stress all affect sugar levels. Good diabetes care protects the eyes, kidneys, nerves, and heart together. Families should not see sugar testing as punishment. It is a guide. It shows whether treatment and habits are working. Regular monitoring helps prevent future damage and supports a steadier, safer life after heart illness for family.</p>\n<p><h1>Chapter 67 - Cholesterol Tracking</h1><p>Cholesterol tracking is important because cholesterol builds silently inside heart vessels for years. LDL is the harmful part that helps plaque grow. HDL is the protective part. Triglycerides also matter, especially in diabetes and poor diet. Many people ignore cholesterol because it does not cause pain. But damage still continues. Regular blood tests show whether food, walking, weight control, and medicines are doing their job. Statins often help greatly, but follow-up is still needed. Families should keep reports safely and bring them to doctor visits. Good cholesterol control reduces the chance of future blockage and heart attack. This is not only about numbers on paper. It is about protecting blood flow and keeping the heart safer for the years ahead.</p>",
+    "<p><h1>Chapter 68 - ECG Archiving</h1><p>Old ECGs are useful because they help doctors compare past and present changes. A single ECG shows only one moment. But a set of ECGs over time tells a story. It can show whether a rhythm problem is new, whether old damage already existed, or whether today’s tracing is truly different. Families should keep ECG papers in one file or scan them safely into a phone or computer. Dates should be written clearly. During follow-up or emergency visits, old ECGs can save time and reduce confusion. They help doctors decide more confidently. ECG archiving is a simple habit, but it gives strong support in future care. A few kept papers can become a valuable guide for protecting the heart later.</p>\n<p><h1>Chapter 69 - Imaging Documentation</h1><p>Imaging reports such as echo, CT, MRI, and angiography reports are parts of records. These tests show the heart in ways symptoms cannot. They may reveal pumping strength, valve problems, vessel blockage, fluid around the heart, or old muscle damage. Families should store these reports carefully by date and keep copies when possible. Losing them can mean repeated testing, extra cost, and delayed decisions. Doctors can understand the patient much faster when old reports are ready. Imaging documentation is not only for hospitals. It is also for families who want safer, smoother future care. Organized records reduce stress during emergencies and improve follow-up. Good storage of important reports is a quiet but powerful way to protect the patient over time.</p>\n<p><h1>Chapter 70 - Job Pattern Analysis</h1><p>A person’s job pattern affects heart health. Long sitting, night shifts, heavy lifting, long travel, irregular meals, and poor sleep all place extra load on the body. Some jobs increase stress. Some reduce movement. Some disturb medicine timing and follow-up. That is why doctors ask about work habits. They want to know what daily demands may harm recovery or increase risk. Families should answer honestly. Work is not only about income. It is also part of health. A heart patient may need changes such as regular breaks, lighter tasks, better meal timing, or reduced night duty. Small workplace changes can make a big difference. Understanding the job pattern helps doctors give more realistic and useful advice for long-term heart protection.</p>",
+    "<p><h1>Chapter 71 - Work Stress Evaluation</h1><p>Work stress can injure the heart over time. Deadlines, long hours, fear of job loss, night work, difficult bosses, constant noise, and emotional pressure can raise blood pressure, disturb sleep, worsen sugar control, and increase unhealthy habits. Many people call this normal life and keep tolerating it. But the body still pays the price. Families should understand that stress is not a feeling. It is also a medical burden. Doctors may ask about work stress because it affects recovery and future risk. The patient may need rest, better timing, lighter work, or emotional support. Honest conversation helps. Good stress management protects the heart. A calmer work life often gives better sleep, better medicine discipline, and better long-term recovery for everyone.</p>\n<p><h1>Chapter 72 - Financial Stability</h1><p>Financial stress quietly harms the heart. Worry about money can disturb sleep, raise blood pressure, worsen sugar control, and make recovery harder. A heart patient needs peace, regular medicines, healthy food, and timely follow-up. All these become difficult when money problems are severe. That is why financial stability matters in heart care. Families should plan medicine costs, follow-up visits, emergency funds, and insurance details in advance. Even small savings can reduce panic during illness. Honest discussion at home is better than silent worry. Stress from debt, job loss, or uncertainty should not be ignored. Doctors may not solve money problems, but they can guide priorities if the family speaks openly. Financial planning protects treatment, reduces fear, and helps the patient recover with more confidence and peace.</p>\n<p><h1>Chapter 73 - Emotional Fulfillment</h1><p>The heart is affected not only by food and medicines, but also by emotions. A life filled with constant sadness, loneliness, anger, or disappointment can make recovery harder. Emotional fulfillment means feeling valued, connected, useful, and peaceful inside. It does not mean a perfect life. It means having enough love, respect, purpose, and hope to live with strength. A patient who feels supported often follows treatment better and fears less. Families should listen kindly, avoid blame, and create a warm home atmosphere. Small acts of affection can calm the mind and reduce stress. Hobbies, faith, friendship, and meaningful routine also help. A peaceful heart inside the chest is supported by a peaceful heart inside the mind and home every day.</p>",
+    "<p><h1>Chapter 74 - Dietary Pattern Review</h1><p>Food habits shape heart health every single day. That is why doctors review not only what a person eats, but also when and how often. Late meals, large portions, too much oil, too much salt, too many sweets, and frequent fried snacks increase risk over time. Skipping meals and overeating later also harm balance. A dietary pattern review helps families see the truth without blame. It shows where simple changes are needed. More vegetables, fruits, pulses, whole grains, water, and home-cooked food support the heart. Smaller portions also help. Families should not wait for a major illness before improving food habits. The kitchen is one of the strongest places of prevention. Better meals today can protect many years of future health.</p>\n<p><h1>Chapter 75 - Processed Food Risks</h1><p>Processed foods often look easy, tasty, and convenient, but they can quietly harm the heart. Many contain too much salt, sugar, unhealthy fat, preservatives, and chemicals. Packaged snacks, ready meals, bakery items, instant foods, and many fast foods may increase blood pressure, weight, cholesterol, and sugar problems. Eating them sometimes is different from eating them daily. The danger grows with regular use. Families should read labels when possible and prefer fresh, simple, home-made food. Children also learn these habits by watching adults. Reducing processed food does not mean removing all joy from eating. It means protecting the body from hidden excess. Simple meals made at home often nourish better, cost less, and keep the heart safer for the long term.</p>\n<p><h1>Chapter 76 - Hidden Sugar Intake</h1><p>Many people think sugar means sweets alone, but hidden sugar is found in many everyday foods. Sweet drinks, tea, coffee, biscuits, bread spreads, breakfast cereals, sauces, desserts, bakery foods, and packaged juices may contain large amounts of sugar. Even foods that do not taste very sweet can still raise sugar load quickly. Too much sugar increases weight, triglycerides, diabetes risk, and vessel damage. This slowly harms the heart. Families should learn to notice where sugar hides. Reading labels, reducing sweet drinks, and choosing fresh fruit instead of sugary snacks can help. Small gradual reduction works better than sudden harsh restriction. Children also benefit from these changes. Less hidden sugar means steadier energy, better sugar control, and better long-term heart protection for the whole family.</p>",
+    "<p><h1>Chapter 77 - Type-A Personality</h1><p>Some people live in constant hurry. They rush, worry, compete, become impatient easily, and feel restless if things move slowly. This pattern is often called a Type-A personality. Such people may work hard and achieve a lot, but the body may pay a price. Constant tension can raise blood pressure, disturb sleep, worsen anger, and increase the load on the heart. This does not mean a hardworking person is wrong. It means balance is needed. Slowing down, breathing calmly, delegating work, and accepting that everything cannot happen at once help greatly. Families should support calmness, not only speed. Rest is not laziness. A quieter mind often protects the heart better. Gentle living can still be productive, useful, and successful in the long run.</p>\n<p><h1>Chapter 78 - Behavioural Risk Habits</h1><p>Behavioural risk habits are daily actions that slowly damage health. These include smoking, excess alcohol, sitting too long, late sleeping, skipping exercise, unhealthy eating, poor medicine habits, and ignoring symptoms. Each habit may look small alone, but together they create serious danger over time. Heart disease often grows through routine behavior, not through one dramatic mistake. This is why honest self-review matters. Families should look at habits with truth and kindness, not shame. Change becomes easier when the home supports it. Small steps help. Walking daily, sleeping earlier, eating on time, taking medicines regularly, and stopping tobacco make a real difference. Good habits protect the heart quietly. Repeated healthy behavior is one of the strongest medicines a family can give itself every day.</p>\n<p><h1>Chapter 79 - Chest Pain Action Plan</h1><p>Every family should have a simple plan for chest pain. During fear, people forget basic steps, lose time, and make confused decisions. A written action plan reduces panic. It should include emergency phone numbers, nearest hospital, regular medicines, allergies, past reports, and who will accompany the patient. The family should know when to call an ambulance, how to keep the patient calm, and what not to do. This plan should be explained to everyone at home. Even older children can learn the basics. A good plan turns fear into action. It saves precious minutes and helps treatment begin sooner. Preparing before trouble comes is wise, not negative. A chest pain action plan is a loving form of readiness for every home.</p>",
+    "<p><h1>Chapter 80 - Risk Reduction Strategy</h1><p>A risk reduction strategy means making a clear plan to lower heart danger step by step. It includes stopping smoking, improving food, controlling sugar, reducing blood pressure, lowering cholesterol, walking regularly, sleeping better, and taking medicines faithfully. It also includes reducing stress and attending follow-up visits. Families should not try to change everything perfectly in one day. Slow, steady progress works better. The plan should be practical and realistic. One house may begin with better meals. Another may begin with walking and blood pressure control. Every good step matters. Doctors can guide priorities, but family support makes them possible. Risk does not reduce by wish alone. It reduces by repeated action. Simple changes done regularly can prevent pain, hospital visits, and future heart attacks over time.</p>\n<p><h1>Chapter 81 - Stress Management</h1><p>Stress management is part of heart treatment, not an extra luxury. When stress stays high for long periods, it raises blood pressure, worsens sugar, disturbs sleep, and increases unhealthy habits. The heart feels this burden. Families should learn simple ways to reduce stress daily. Quiet breathing, regular walking, prayer, meditation, shorter arguments, better time planning, and gentle conversation all help. Rest should be respected. A tired mind cannot support a tired heart well. Some stress cannot be removed, but it can be managed better. Speaking openly also helps. The patient should not carry all fear silently. A calm home atmosphere protects recovery. Even small daily peace practices can reduce the body’s alarm response and help the heart feel safer and more supported.</p>\n<p><h1>Chapter 82 - Exercise Planning</h1><p>Exercise planning means choosing safe movement in the right amount and at the right time. After heart illness, the patient should not suddenly start heavy exercise. The body needs gradual progress. Walking is often the safest beginning, but the doctor may guide the speed and duration. Warm-up and rest are important. Breathlessness, chest pain, dizziness, or unusual weakness should be reported. Exercise should support the heart, not frighten it. Families should encourage regular movement but avoid forcing too much. A little daily movement is better than rare heavy effort. Exercise improves blood flow, mood, sugar control, weight, and confidence. With proper planning, the patient becomes stronger step by step. Regular safe movement is one of the best gifts a family can support after heart illness.</p>",
+    "<p><h1>Chapter 83 - Addiction Control</h1><p>Addictions harm the heart in many ways. Smoking injures vessels, raises clot risk, and lowers oxygen. Excess alcohol can weaken the heart, disturb rhythm, and worsen blood pressure. Some people also become dependent on unhealthy food, constant stress habits, or other harmful substances. Quitting is not always easy, but it is possible with family support and steady effort. Doctors can help with medicines, counseling, or stepwise plans. Families should avoid mocking or constant anger. Firm support works better than shame. Every day without tobacco is a victory for the heart. Every reduction in harmful use matters. Addiction control is not only about stopping a substance. It is about protecting life, improving recovery, and giving the patient a real chance at stronger future health.</p>\n<p><h1>Chapter 84 - Family Counseling</h1><p>Family counseling helps the whole home understand heart illness better. A heart patient does not recover alone. The family’s words, habits, fears, and support all affect healing. Some families become overprotective. Some become impatient. Some hide stress. Counseling helps everyone speak more clearly and care more wisely. It can teach simple things like medicine support, diet planning, stress control, emergency action, and how to encourage without pressuring. It also helps reduce guilt, anger, and misunderstanding. Family counseling is not only for severe emotional problems. It is for practical healing too. When the family works as one team, the patient feels safer and stronger. Understanding at home often becomes as valuable as treatment in hospital during long-term recovery and daily life.</p>\n<p><h1>Chapter 85 - Spiritual Balance</h1><p>Spiritual balance means keeping inner peace, hope, and meaning alive during illness. It does not depend on one religion only. It may come through prayer, meditation, gratitude, silence, service, scripture, or simple trust in God. Spiritual balance can calm fear and reduce emotional heaviness. It helps many patients accept treatment with courage and face uncertainty with less panic. Families should respect whatever gives true peace without forcing beliefs. A calm spiritual life can support sleep, reduce stress, and bring comfort during difficult days. It does not replace medicines or doctor care. It supports them from inside. When the mind feels connected to hope and meaning, the body often copes better. Inner peace becomes a quiet strength for the patient and family together.</p>",
+    "<p><h1>Chapter 86 - Annual Heart Review</h1><p>A yearly heart review helps find problems early, before they become dangerous. Even when a patient feels well, silent changes may still be happening. Blood pressure may rise, sugar may worsen, cholesterol may increase, or the heart’s function may change slowly. A yearly review may include blood tests, ECG, blood pressure check, sugar check, weight review, and doctor consultation. Some patients may also need echo or other tests. Families should mark one fixed time every year for this review. Prevention works best when it becomes a habit. A yearly check is not fear. It is wise maintenance. Catching problems early often means simpler treatment and better results. One planned review each year can protect many future months of health, peace, and stability.</p>\n<p><h1>Chapter 87 - Family Risk Mapping</h1><p>Family risk mapping means looking at illnesses that run through the family. If parents, brothers, sisters, or close relatives had heart attacks, stroke, diabetes, high blood pressure, or high cholesterol, the next generation may also carry higher risk. Knowing this early helps families begin prevention sooner. It does not mean fate cannot change. It means awareness should begin earlier. Families should talk openly about medical history and write it down. This helps doctors guide screening and treatment more wisely. Children of high-risk families can benefit from better food, more exercise, weight control, and earlier checkups. Family risk mapping turns old family pain into future protection. Awareness today can help younger people avoid or delay the same illness tomorrow with better planning.</p>\n<p><h1>Chapter 88 - Early Warning Monitoring</h1><p>Early warning monitoring means paying attention to small signs before they become a crisis. Rising tiredness, reduced walking capacity, more breathlessness, mild swelling, palpitations, chest heaviness, poor sleep, or unusual weakness can all be warning clues. Families should not wait only for dramatic symptoms. The body often shows smaller signs first. Writing these changes down helps doctors understand the pattern better. Early reporting can prevent hospital admission or a major emergency. Monitoring is not fearfulness. It is careful living. The aim is not to panic over every small symptom, but to notice repeated or changing patterns. Families who watch gently and wisely often catch trouble sooner. Quiet attention can protect the heart before it asks for help in a louder way.</p>",
+    "<p><h1>Chapter 89 - Digital Health Tools</h1><p>Digital health tools can support heart care when used wisely. Blood pressure machines, glucometers, smartwatch heart rate records, reminder alarms, and health apps can help families track important information. These tools are useful because they make patterns easier to see. They can also improve medicine timing and follow-up discipline. But digital tools should support medical care, not replace doctors. Families should avoid panic from every number and should learn what readings really matter. Records should be shown during follow-up visits. Technology works best when used calmly and regularly. Even simple phone reminders can reduce missed medicines and missed appointments. When used with balance, digital tools can make home care more organized, reduce confusion, and support safer long-term heart protection for patients.</p>\n<p><h1>Chapter 90 - Home Health Culture</h1><p>Home health culture means making the house itself support better living. The kitchen, sleep routine, daily talk, meal timing, medicine habits, and emotional tone all affect the heart. If the home supports too much salt, too much oil, late nights, constant anger, and no walking, illness grows easily. If the home supports calmness, regular meals, fresh food, medicines on time, and gentle encouragement, healing becomes easier. Children also learn from what they see daily. Families should build a culture where health is normal, not forced only after illness. This does not need perfection. It needs steady intention. A healthy home atmosphere protects not just one patient, but every person living inside it. Good culture becomes silent medicine for the family together.</p>\n<p><h1>Chapter 91 - Summary and Learning</h1><p>This journey teaches one simple truth. Heart safety grows from awareness, daily habits, timely treatment, and family support. Medicines matter. Tests matter. Doctors matter. But home habits also matter greatly. Food, sleep, stress, walking, records, follow-up, and calmness all help protect the heart. Families do not need to become doctors. They need to become attentive, truthful, and prepared. Many heart emergencies become worse because warning signs were ignored or action came too late. Many lives improve because families acted early and stayed disciplined afterward. Learning is valuable only when it becomes action. This book teaches not fear, but wise care. With simple knowledge and steady habits, families can protect the heart better and build a safer, calmer, healthier future together each day.</p>",
+    "<p><h1>Chapter 92 - Commitment to Action</h1><p>Knowledge is useful only when it becomes daily action. A patient may read, understand, and agree with every heart message, but real protection begins only when habits change. Medicines must be taken on time. Walking must become regular. Food must become wiser. Sleep must be respected. Stress must be reduced. Follow-up must not be delayed. Families should not wait for fear to create discipline. Discipline should begin because life is precious. A heart that has suffered once deserves more care, not old neglect. Commitment means doing small right things again and again, even on ordinary days. True healing is built quietly. One steady promise kept daily can protect years of life. Action is the bridge between learning and safety for the whole family.</p>\n<p><h1>Chapter 93 - Family Health Pledge</h1><p>A family health pledge is a promise made with love. It means the home will protect the heart together. We will not ignore chest pain. We will not delay help. We will keep medicines on time. We will support healthy food, walking, sleep, and peaceful habits. We will reduce anger, blame, and careless living. We will keep reports and emergency numbers ready. We will go for follow-up visits without excuses. We will help one another with patience, not pressure. This pledge is not only for the patient. It is for the whole family. When one person changes, everyone benefits. A home that chooses health together becomes stronger together. Shared discipline, shared kindness, and shared responsibility can protect many years of life, peace, and family happiness.</p>\n<p><h1>Chapter 94 - Final Message</h1><p>The heart is not only an organ inside the chest. It is the quiet center of family life. When it suffers, the whole home feels it. When it is protected, the whole home becomes more peaceful. This book teaches one loving truth: early attention, wise treatment, simple habits, and family support can save life. Not every danger can be prevented, but many dangers can be reduced. Not every pain can be avoided, but much suffering can be softened. The goal is not fear. The goal is awareness, readiness, and hope. Let this knowledge stay alive in the home. Let it become daily care. Protecting one heart often protects many lives around it. A cared-for heart gives longer love, steadier presence, and safer years to the family.</p>",
+    "<p><h1>Selected Guideline References</h1><p>- 2023 European Society of Cardiology Guidelines for the Management of Acute Coronary Syndromes.</p>\n<p>- 2021 American Heart Association / American College of Cardiology Guideline for the Evaluation and Diagnosis of Chest Pain.</p>"
+  ]
+}

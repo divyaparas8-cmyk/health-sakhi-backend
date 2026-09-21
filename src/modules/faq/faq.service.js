@@ -26,7 +26,7 @@ const getAllFaqs = async (filters = {}) => {
   return prisma.faq.findMany({
     where,
     orderBy: [
-      { displayOrder: 'desc' },
+      { displayOrder: 'asc' },
       { createdAt: 'desc' }
     ]
   });

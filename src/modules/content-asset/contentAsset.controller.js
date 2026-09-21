@@ -200,6 +200,120 @@ const getBookFeedbacks = async (req, res, next) => {
   }
 };
 
+const librarySearchService = require('./librarySearch.service');
+
+const findABook = async (req, res, next) => {
+  try {
+    const query = req.query.query || req.body.query || '';
+    const category = req.query.category || req.body.category || 'All';
+    const lang = req.query.lang || req.body.lang || 'en';
+    const limit = parseInt(req.query.limit || req.body.limit || '20', 10);
+
+    const result = await librarySearchService.findABook({
+      query,
+      category,
+      lang,
+      limit
+    });
+
+    res.status(200).json(result);
+  } catch (err) {
+    next(err);
+  }
+};
+
+const searchBookTopics = async (req, res, next) => {
+  try {
+    const { query, topics = [], bookTitle = '', lang = 'en' } = req.body;
+    if (!query || !query.trim() || !Array.isArray(topics) || topics.length === 0) {
+      return res.status(200).json({
+        success: true,
+        keyPoints: [],
+        matchedIds: [],
+        matchedIndices: []
+      });
+    }
+
+    const cleanQuery = query.trim();
+    const apiKey = process.env.GEMINI_API_KEY || '';
+    const modelName = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+
+    if (!apiKey) {
+      const qLower = cleanQuery.toLowerCase();
+      const matched = [];
+      topics.forEach((t, idx) => {
+        const title = (typeof t === 'string' ? t : t.title || '').toLowerCase();
+        if (title.includes(qLower)) matched.push(t.id !== undefined ? t.id : idx);
+      });
+      return res.status(200).json({
+        success: true,
+        keyPoints: [cleanQuery],
+        matchedIds: matched,
+        matchedIndices: matched
+      });
+    }
+
+    const { GoogleGenerativeAI } = require('@google/generative-ai');
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: modelName });
+
+    const compactTopics = topics.slice(0, 100).map((t, idx) => ({
+      idx,
+      id: t.id !== undefined ? t.id : idx,
+      title: typeof t === 'string' ? t : (t.title || `Topic ${idx + 1}`)
+    }));
+
+    const prompt = `You are the semantic indexing engine for the HealthSakhi Women's Health & Wellness Book Library.
+Book Title: "${bookTitle || 'Health & Wellness Book'}"
+User search: "${cleanQuery}" (Language: ${lang})
+
+Available book topics:
+${JSON.stringify(compactTopics)}
+
+TASK:
+1. Understand the core key points, symptoms, or concerns the user is searching for (including Hindi, Hinglish, English synonyms, emotional states, and health terms).
+2. Identify which topic(s) from the provided list directly address, explain, or are most relevant to the user's search.
+3. Return 2 to 5 key points detected, and the list of matched topic IDs and indices in order of relevance.
+
+SAFETY: No medical diagnosis, no treatment advice. Only topic index mapping.
+
+Return ONLY a valid JSON object in this exact format:
+{
+  "keyPoints": ["concept 1", "concept 2"],
+  "matchedIds": [id1, id2],
+  "matchedIndices": [index1, index2]
+}`;
+
+    const result = await model.generateContent(prompt);
+    const text = result.response.text();
+    const jsonMatch = text.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      const parsed = JSON.parse(jsonMatch[0]);
+      return res.status(200).json({
+        success: true,
+        keyPoints: Array.isArray(parsed.keyPoints) ? parsed.keyPoints : [],
+        matchedIds: Array.isArray(parsed.matchedIds) ? parsed.matchedIds : [],
+        matchedIndices: Array.isArray(parsed.matchedIndices) ? parsed.matchedIndices : []
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      keyPoints: [cleanQuery],
+      matchedIds: [],
+      matchedIndices: []
+    });
+  } catch (err) {
+    logger.warn('[searchBookTopics] Semantic search error:', err.message);
+    res.status(200).json({
+      success: true,
+      keyPoints: [req.body.query],
+      matchedIds: [],
+      matchedIndices: []
+    });
+  }
+};
+
 module.exports = {
   createAsset,
   listAdminAssets,
@@ -213,5 +327,7 @@ module.exports = {
   getUserAllProgress,
   submitFeedback,
   getBookFeedbacks,
+  findABook,
+  searchBookTopics,
   uploadMiddleware: upload.single('mediaFile')
 };

@@ -9,6 +9,13 @@ const router = express.Router();
 // List published assets (filter by type, category)
 router.get('/content-assets', controller.listPublicAssets);
 
+// AI-Assisted Find a Book Search endpoint
+router.get('/content-assets/find-a-book', controller.findABook);
+router.post('/content-assets/find-a-book', controller.findABook);
+
+// Semantic Book Topic Search endpoint (uses Gemini key from .env)
+router.post('/content-assets/search-book-topics', controller.searchBookTopics);
+
 // Get single published asset by ID
 router.get('/content-assets/:id', controller.getAssetById);
 
